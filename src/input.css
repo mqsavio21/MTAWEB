@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .event-card {
+        @apply flex flex-col;
+    }
+
+    .event-card-image {
+        @apply aspect-square overflow-hidden;
+    }
+
+    .event-card-image img {
+        @apply w-full h-full object-cover;
+    }
+
+    .event-card-content {
+        @apply mt-4;
+    }
+
+    .event-card-title {
+        @apply text-2xl font-bold mb-2;
+    }
+
+    .event-card-description {
+        @apply text-gray-600;
+    }
+}
