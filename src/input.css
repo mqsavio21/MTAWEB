@@ -26,4 +26,28 @@
     .event-card-description {
         @apply text-gray-600;
     }
+
+    /* Mobile menu transition */
+    #mobile-menu-items {
+        @apply transition-all duration-300 ease-in-out;
+    }
+
+    /* Responsive text adjustments */
+    .responsive-heading {
+        @apply text-2xl md:text-4xl font-bold;
+    }
+
+    .responsive-text {
+        @apply text-sm md:text-base;
+    }
+
+    /* Responsive padding/margin */
+    .responsive-section {
+        @apply py-8 md:py-16 px-4;
+    }
+
+    /* Responsive container */
+    .responsive-container {
+        @apply max-w-7xl mx-auto px-4 md:px-6;
+    }
 }

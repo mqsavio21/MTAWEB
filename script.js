@@ -22,4 +22,19 @@ function copyToClipboard(elementId) {
         .catch(err => {
             console.error('Failed to copy text: ', err);
         });
-} 
+}
+
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu-items');
+    mobileMenu.classList.toggle('hidden');
+}
+
+// Optional: Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    const mobileMenu = document.getElementById('mobile-menu-items');
+    const mobileMenuButton = document.querySelector('button[onclick="toggleMobileMenu()"]');
+    
+    if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+    }
+}); 
