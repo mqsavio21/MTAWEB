@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your site description" />
+    <title>Your Page Title</title>
+    <!-- CSS Link (this will be our compiled CSS) -->
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="flex items-center justify-between px-6 py-4 bg-white">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="/">
+            <img
+              src="public/images/logomta.webp"
+              alt="MTA Logo"
+              class="h-8 md:h-12"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden" onclick="toggleMobileMenu()">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Navigation Links - Hidden on mobile -->
+        <div class="hidden md:flex items-center space-x-8" id="mobile-menu">
+          <a href="/whats-on" class="text-gray-700 hover:text-gray-900"
+            >What's On</a
+          >
+          <a href="/directory" class="text-gray-700 hover:text-gray-900"
+            >Directory</a
+          >
+          <a href="/loyalty" class="text-gray-700 hover:text-gray-900"
+            >Loyalty</a
+          >
+          <a href="/contact" class="text-gray-700 hover:text-gray-900"
+            >Contact Us</a
+          >
+          <a href="/news" class="text-gray-700 hover:text-gray-900">News</a>
+          <a href="/about" class="text-gray-700 hover:text-gray-900">About</a>
+        </div>
+
+        <!-- Right Side Items - Hidden on mobile -->
+        <div class="hidden md:flex items-center space-x-6">
+          <div class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <span class="text-gray-700">Open everyday 11am - 10pm</span>
+          </div>
+          <div class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+            <a href="/location" class="text-gray-700 hover:text-gray-900"
+              >Getting Here</a
+            >
+          </div>
+          <div>
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu (Initially Hidden) -->
+      <div class="md:hidden hidden bg-white" id="mobile-menu-items">
+        <div class="px-4 py-2 space-y-3">
+          <a href="/whats-on" class="block text-gray-700 hover:text-gray-900"
+            >What's On</a
+          >
+          <a href="/directory" class="block text-gray-700 hover:text-gray-900"
+            >Directory</a
+          >
+          <a href="/loyalty" class="block text-gray-700 hover:text-gray-900"
+            >Loyalty</a
+          >
+          <a href="/contact" class="block text-gray-700 hover:text-gray-900"
+            >Contact Us</a
+          >
+          <a href="/news" class="block text-gray-700 hover:text-gray-900"
+            >News</a
+          >
+          <a href="/about" class="block text-gray-700 hover:text-gray-900"
+            >About</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container mx-auto">
+        <!-- Hero Container -->
+        <div
+          class="relative h-auto md:h-[597px] rounded-2xl overflow-hidden bg-[#EFABAC]"
+        >
+          <div class="flex flex-col-reverse md:flex-row">
+            <!-- Left side image with gradient -->
+            <div class="relative w-full md:w-1/2">
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-transparent to-[#EFABAC] via-transparent z-10"
+              ></div>
+              <img
+                src="public/images/directory.png"
+                alt="Shopping Experience"
+                class="w-full h-full object-cover min-h-[300px] md:h-[597px] md:pr-32"
+              />
+            </div>
+
+            <!-- Right side content -->
+            <div
+              class="w-full md:w-1/2 md:max-w-[539px] p-8 md:p-0 flex flex-col justify-center"
+            >
+              <div class="space-y-4 md:space-y-6">
+                <div class="space-y-2 md:space-y-4">
+                  <h1
+                    class="text-white text-4xl md:text-[56px] font-semibold leading-tight md:leading-[135%] tracking-[-1px]"
+                  >
+                    Elevate Your Shopping Experience
+                  </h1>
+                  <p class="text-white text-lg md:text-xl font-normal">
+                    Stay ahead of the curve with our selection of the newest and
+                    hottest trends
+                  </p>
+                </div>
+
+                <!-- Scroll down indicator -->
+                <div class="flex items-center gap-2 pt-4">
+                  <span class="text-[#EDEDED] text-xs"
+                    >Scroll down to discover shop</span
+                  >
+                  <svg
+                    class="w-4 h-4 text-[#EDEDED]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Background gradient overlay -->
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/25 pointer-events-none"
+          ></div>
+        </div>
+      </section>
+      <section class="container mx-auto">
+        <div id="tennantList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8 py-8">
+            <!-- Template card will be repeated here -->
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-white py-8 md:py-12 px-4 md:px-6 border-t border-gray-200"
+    >
+      <div class="max-w-7xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
+        <!-- Company Section -->
+        <div>
+          <h3 class="font-bold text-lg mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="/about-us" class="text-gray-600 hover:text-gray-900"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="/whats-on" class="text-gray-600 hover:text-gray-900"
+                >What's on</a
+              >
+            </li>
+            <li>
+              <a
+                href="/loyalty-program"
+                class="text-gray-600 hover:text-gray-900"
+                >Loyalty program</a
+              >
+            </li>
+            <li>
+              <a href="/news" class="text-gray-600 hover:text-gray-900">News</a>
+            </li>
+            <li>
+              <a href="/about-us" class="text-gray-600 hover:text-gray-900"
+                >About us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Directories Section -->
+        <div>
+          <h3 class="font-bold text-lg mb-4">Directories</h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="/restaurant-cafes"
+                class="text-gray-600 hover:text-gray-900"
+                >Restaurant & Cafes</a
+              >
+            </li>
+            <li>
+              <a href="/foodcourt" class="text-gray-600 hover:text-gray-900"
+                >Foodcourt</a
+              >
+            </li>
+            <li>
+              <a href="/leather-goods" class="text-gray-600 hover:text-gray-900"
+                >Leather Goods, Bag & Shoes</a
+              >
+            </li>
+            <li>
+              <a
+                href="/beauty-fragrance"
+                class="text-gray-600 hover:text-gray-900"
+                >Beauty & Fragrance</a
+              >
+            </li>
+            <li>
+              <a
+                href="/sporting-goods"
+                class="text-gray-600 hover:text-gray-900"
+                >Sporting Goods & Apparel</a
+              >
+            </li>
+            <li>
+              <a href="/children-wear" class="text-gray-600 hover:text-gray-900"
+                >Children's Wear & Toys</a
+              >
+            </li>
+            <li>
+              <a href="/major-stores" class="text-gray-600 hover:text-gray-900"
+                >Major Stores & Supermarket</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact & Legal Section -->
+        <div class="space-y-8">
+          <!-- Contact Us -->
+          <div>
+            <h3 class="font-bold text-lg mb-4">Contact us</h3>
+            <div class="space-y-2">
+              <p class="text-gray-600 font-semibold">Management Office</p>
+              <p class="text-gray-600">PT. Mulia Intipelangi</p>
+              <p class="text-gray-600">+62 21 564 3777</p>
+              <p class="text-gray-600">marketing@taman-anggrek-mall.com</p>
+
+              <div class="mt-4">
+                <p class="text-gray-600 font-semibold">
+                  Advertising & Promotional Activities
+                </p>
+                <p class="text-gray-600">
+                  advertisingpromotion@taman-anggrek-mall.com
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Legal -->
+          <div>
+            <h3 class="font-bold text-lg mb-4">Legal</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="/terms" class="text-gray-600 hover:text-gray-900"
+                  >Terms of use</a
+                >
+              </li>
+              <li>
+                <a href="/privacy" class="text-gray-600 hover:text-gray-900"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tennantList = document.getElementById('tennantList');
+            const tennantCard = `
+                <div class="w-full max-w-[330px] flex flex-col">
+                    <!-- Image Container -->
+                    <div class="relative w-full aspect-square rounded-lg overflow-hidden bg-gray-200">
+                        <img src="https://picsum.photos/200" alt="Adidas Store Interior" class="w-full h-full object-cover" />
+                    </div>
+
+                    <!-- Description Card -->
+                    <div class="relative -mt-8 mx-2 flex flex-col gap-4 p-4 bg-white border border-[#DEDEDE] rounded-lg">
+                        <!-- Tenant Name -->
+                        <h3 class="text-2xl font-semibold text-black">Adidas</h3>
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between items-start">
+                            <!-- Location -->
+                            <div class="flex items-center gap-1">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <span class="text-sm text-[#3E3E3E]">Lv UG #E33</span>
+                            </div>
+
+                            <!-- AYC Benefits -->
+                            <div class="flex items-center gap-1">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 6.66663C2.5 6.00358 2.76339 5.3677 3.23223 4.89886C3.70107 4.43002 4.33696 4.16663 5 4.16663H15C15.663 4.16663 16.2989 4.43002 16.7678 4.89886C17.2366 5.3677 17.5 6.00358 17.5 6.66663V13.3333C17.5 13.9963 17.2366 14.6322 16.7678 15.1011C16.2989 15.5699 15.663 15.8333 15 15.8333H5C4.33696 15.8333 3.70107 15.5699 3.23223 15.1011C2.76339 14.6322 2.5 13.9963 2.5 13.3333V6.66663Z" stroke="#C76BC7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.83333 13.3333L8.33333 10.8333M8.33333 10.8333L10.8333 13.3333M8.33333 10.8333C7.98083 9.30834 7.19 8.31667 6.25 8.33334C5.5925 8.33334 5 8.89334 5 9.58334C5 10.2733 6.00917 10.8333 6.66667 10.8333H10C10.6575 10.8333 11.6667 10.2733 11.6667 9.58334C11.6667 8.89334 11.0742 8.33334 10.4167 8.33334C9.47667 8.31667 8.68583 9.30834 8.33333 10.8333Z" stroke="#C76BC7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="text-sm text-[#C76BC7]">AYC Benefits Accepted</span>
+                            </div>
+                        </div>
+
+                        <!-- Discover Button -->
+                        <a href="directory-detail.html" class="group flex items-center justify-start px-4 py-2 gap-2 text-[#1AAAAB] font-semibold">
+                            <span>Discover Tenant</span>
+                            <svg class="group-hover:translate-x-1 transition-transform duration-300" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="#1AAAAB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            // Repeat the card 32 times
+            for (let i = 0; i < 32; i++) {
+                tennantList.innerHTML += tennantCard;
+            }
+        });
+    </script>
+  </body>
+</html>
