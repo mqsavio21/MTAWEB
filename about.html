@@ -8,6 +8,7 @@
     <!-- CSS Link (this will be our compiled CSS) -->
     <link rel="stylesheet" href="dist/output.css">
     <link href="https://fonts.cdnfonts.com/css/marlion" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -77,22 +78,213 @@
     <main>
         <!-- New Hero Section -->
         <section class="relative h-[500px] flex items-center justify-center">
-            <!-- Background Image -->
+            <!-- Background Image with gradient overlay -->
             <div class="absolute inset-0 w-full h-full">
-                <img 
-                    src="public/images/mtabig.webp" 
-                    alt="Decorative flower background" 
-                    class="w-full h-[500px] object-cover"
-                >
+                <div class="relative w-full h-full">
+                    <img 
+                        src="public/images/mtabig.webp" 
+                        alt="Taman Anggrek Mall exterior at night" 
+                        class="w-full h-[500px] object-cover"
+                    >
+                    <!-- Gradient overlay - only at bottom -->
+                    <div class="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-white/100 to-transparent"></div>
+                </div>
             </div>
 
             <!-- Content -->
-            <div class="relative text-center z-10 mt-48">
-                <h1 class="text-4xl font-bold mb-6">Contact Us</h1>
-                <p class="text-gray-700 text-xl max-w-2xl mx-auto px-4">
-                    Get in touch with us. Find our location, contact details, and 
-                    ways to reach us for inquiries or assistance.
+            <div class="relative text-center z-10 mt-56">
+                <h1 class="text-5xl font-semibold mb-6 font-['Comic Sans MS'] text-black">About Us</h1>
+                <p class="text-gray-800 text-xl max-w-2xl mx-auto px-4">
+                    Learn more about us. Discover our story, values, and what
+                    drives us to deliver the best experiences for our customers
+                    every day.
                 </p>
+            </div>
+        </section>
+
+        <!-- Mall Landmark Section -->
+        <section class="responsive-section">
+            <div class="responsive-container max-w-5xl">
+                <!-- Text Content -->
+                <div class="mb-8">
+                    <h2 class="text-3xl font-semibold mb-6 font-['Comic Sans MS']">A Shopping Landmark</h2>
+                    <p class="text-gray-600 text-xl leading-relaxed">
+                        Mal Taman Anggrek, a vibrant hub in West Jakarta, offers endless shopping, dining, and 
+                        entertainment. With over 400 stores and top international brands, this seven-storey, 360,000 sqm 
+                        mall is a go-to destination for trendsetters. It features attractions like an ice rink, cinema, and 
+                        fitness center, plus numerous shops and eateries. The mall also hosts major events in its 20+ 
+                        exhibition spaces, including a stunning 800 sqm atrium.
+                    </p>
+                </div>
+
+                <!-- Image (centered with flex) -->
+                <div class="flex justify-center">
+                    <img 
+                        src="public/images/mtarainbow.webp" 
+                        alt="Mal Taman Anggrek exterior with colorful LED display" 
+                        class="w-[820px] h-[500px] object-cover rounded-2xl"
+                    >
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="responsive-section bg-gray-50 py-16">
+            <div class="responsive-container max-w-5xl">
+                <h2 class="text-3xl font-semibold text-center mb-12 font-['Comic Sans MS']">The Heart of Jakarta's Retail Landscape</h2>
+                
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-16 text-center px-4">
+                    <!-- Annual Customer Traffic -->
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-4xl font-bold whitespace-nowrap font-['Satoshi-Variable']">18 Million</p>
+                        </div>
+                        <p class="text-gray-600">Annual Customer Traffic</p>
+                    </div>
+
+                    <!-- Lettable Area -->
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-4xl font-bold whitespace-nowrap font-['Satoshi-Variable']">110K sqm</p>
+                        </div>
+                        <p class="text-gray-600">Lettable Area</p>
+                    </div>
+
+                    <!-- Parking spaces -->
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-4xl font-bold font-['Satoshi-Variable']">4000</p>
+                        </div>
+                        <p class="text-gray-600">Parking spaces</p>
+                    </div>
+
+                    <!-- Retail units -->
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-4xl font-bold font-['Satoshi-Variable']">700</p>
+                        </div>
+                        <p class="text-gray-600">Retail units</p>
+                    </div>
+
+                    <!-- Retail floors -->
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-4xl font-bold font-['Satoshi-Variable']">7</p>
+                        </div>
+                        <p class="text-gray-600">Retail floors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two Column Section -->
+        <section class="responsive-section">
+            <div class="responsive-container max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Left Column -->
+                <div>
+                    <h2 class="text-3xl font-semibold mb-6 text-[#6246EA] font-['Comic Sans MS'] inline-block border-b-4 border-[#6246EA] pb-3">A Beneficial Membership</h2>
+                </div>
+                <!-- Right Column -->
+                <div>
+                    <h2 class="text-3xl font-semibold mb-6 text-gray-700 font-['Comic Sans MS']">A Signature of Distinction</h2>
+                </div>
+            </div>
+            <!-- Full Width Content -->
+            <div class="responsive-container max-w-5xl mt-6">
+                <p class="text-gray-600 text-xl leading-relaxed">
+                    Mal Taman Anggrek is owned and managed by Indonesia's renowned Mulia Group, which brings with it more than 20 years of residential, commercial and hotel property development experience. At the heart of our retail operations are our tenants, and our dedicated management team works round the clock to ensure housekeeping, security and other business needs are always met. More than that, we are in tune with what today's consumers want and expect - and we deliver just that, through innovative marketing strategies and the constant upgrading of interiors, amenities, services and technology.
+                </p>
+            </div>
+        </section>
+
+        <!-- Facilities Grid Section -->
+        <section class="responsive-section">
+            <div class="responsive-container max-w-7xl mx-auto">
+                <h2 class="text-3xl font-semibold mb-8 font-['Comic Sans MS'] text-center">Facilities</h2>
+                
+                <!-- Grid Container -->
+                <div class="grid grid-cols-8 gap-1">
+                    <!-- Top Row -->
+                    <div class="bg-[#26B7B0] p-6 text-white text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M3 21h18M3 10h18M3 18h18M3 7h18M5 4h14" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p class="font-semibold">Praying Room</p>
+                    </div>
+
+                    <div class="col-span-3">
+                        <img src="public/images/praying-room.webp" alt="Praying Room" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="bg-[#E5F7F6] p-6 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20 12H4M4 12l6-6M4 12l6 6" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p class="font-semibold">Concierge</p>
+                    </div>
+
+                    <div class="bg-[#E5F7F6] p-6 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 17h14M5 17a2 2 0 01-2-2V9m2 8a2 2 0 002 2h10a2 2 0 002-2M5 17l-2-2m19 2a2 2 0 01-2-2V9" stroke-width="2"/>
+                        </svg>
+                        <p class="font-semibold">Taxi Lounge</p>
+                    </div>
+
+                    <div class="bg-[#E5F7F6] p-6 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M9 21h6m-6 0v-5m6 5v-5M3 12l9-9 9 9M5 10v10h14V10" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p class="font-semibold">Stroller & Wheel chair</p>
+                    </div>
+
+                    <!-- Bottom Row -->
+                    <div class="bg-[#E5F7F6] p-6 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M15 7h3a5 5 0 010 10h-3m-6 0H6a5 5 0 010-10h3" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p class="font-semibold">Lost & Found</p>
+                    </div>
+
+                    <div class="bg-[#E5F7F6] p-6 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 17h14M5 17a2 2 0 01-2-2V9m2 8a2 2 0 002 2h10a2 2 0 002-2M5 17l-2-2m19 2a2 2 0 01-2-2V9" stroke-width="2"/>
+                        </svg>
+                        <p class="font-semibold">Valet Parking</p>
+                    </div>
+
+                    <div class="bg-[#E5F7F6] p-6 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 17h14M5 17a2 2 0 01-2-2V9m2 8a2 2 0 002 2h10a2 2 0 002-2M5 17l-2-2m19 2a2 2 0 01-2-2V9" stroke-width="2"/>
+                        </svg>
+                        <p class="font-semibold">Valet Parking</p>
+                    </div>
+
+                    <div class="bg-[#E5F7F6] p-6 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M19 14v-4a8 8 0 10-16 0v4M12 4v8m0 0l-4-4m4 4l4-4" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p class="font-semibold">First Aid Room</p>
+                    </div>
+
+                    <div class="bg-[#E5F7F6] p-6 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 4v16m-8-8h16" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <p class="font-semibold">Baby Changing Room</p>
+                    </div>
+                    <div class="col-span-3">
+                        <img src="public/images/attendant.webp" alt="Attendant" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="bg-[#26B7B0] p-6 text-white text-center">
+                        <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke-width="2"/>
+                            <circle cx="9" cy="7" r="4" stroke-width="2"/>
+                        </svg>
+                        <p class="font-semibold">Attendant</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
