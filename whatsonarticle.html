@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your site description">
-    <title>News</title>
+    <title>What's On Article</title>
     <!-- CSS Link (this will be our compiled CSS) -->
     <link rel="stylesheet" href="dist/output.css">
-    <link href="https://fonts.cdnfonts.com/css/marlion" rel="stylesheet">
+
 </head>
 
 <body>
@@ -74,90 +74,83 @@
     </header>
 
     <main class="max-w-[100rem] mx-auto px-4 py-8">
-        <!-- Hero Section with Background Image -->
-        <section class="relative h-[500px] flex items-center justify-center rounded-2xl overflow-hidden">
-            <!-- Background Image with Overlay -->
-            <div class="absolute inset-0">
-                <img src="public/images/newshead.webp" alt="News Background" class="w-full h-full object-cover">
-                <!-- Dark Overlay -->
-                <div class="absolute inset-0 bg-black/50"></div>
+        <!-- Article Section -->
+        <section class="max-w-4xl mx-auto">
+            <div class="mb-8">
+                <div class="flex items-center justify-center gap-2 text-gray-600 mb-4">
+                    <span class="text-xl md:text-xl font-semibold">Celebration</span>
+                    <span>•</span>
+                    <span class="text-xl md:text-xl">September 3, 2024</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-semibold text-gray-600 mb-6 font-['Comic Sans MS'] text-center">
+                    Opening Soon: The Immigration Lounge at Mal Taman Anggrek!
+                </h1>
             </div>
-            
-            <!-- Content -->
-            <div class="relative text-center text-white z-10">
-                <img src="public/images/logomtawhite.webp" alt="MTA Logo" class="h-16 md:h-20 mx-auto mb-6">
-                <h1 class="text-4xl md:text-5xl font-semibold mb-4">News</h1>
-                <p class="text-lg md:text-xl px-4">
-                    Get the Latest News and Updates: Discover What's New<br class="hidden md:block">
-                    and Happening at Mall Taman Anggrek!
-                </p>
-            </div>
-        </section>
 
-        <!-- News Content Section - Hidden on mobile -->
-        <section class="hidden md:block mt-8 md:mt-16 px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Left Text Content -->
-                <div class="space-y-4 text-center md:text-left">
-                    <div class="space-y-4">
-                        <!-- Title line with bullet separator -->
-                        <div class="flex items-center text-xl md:text-[2rem] justify-center md:justify-start">
-                            <span class="font-semibold text-gray-700">News</span>
-                            <span class="mx-4">•</span>
-                            <span class="text-gray-600">Featured</span>
-                        </div>
-                        <!-- Main heading -->
-                        <h2 class="text-2xl md:text-[2.5rem] leading-tight font-semibold text-gray-700">
-                            Celebrates Kartini<br>
-                            Day: Honoring the<br>
-                            Spirit of<br>
-                            Empowerment
-                        </h2>
-                    </div>
+            <!-- Featured Image -->
+            <div class="w-full mb-12">
+                <img 
+                    src="public/images/passport.webp" 
+                    alt="passport" 
+                    class="w-full max-h-[600px] object-contain rounded-lg"
+                >
+            </div>
+
+            <!-- Article Content -->
+            <article class="prose prose-xl px-12 md:px-8">
+                <!-- Article Paragraphs -->
+                <div class="max-w-4xl mx-auto space-y-8 text-gray-700 text-left">
+                    <p class="text-lg md:text-xl">
+                        Exciting news for Jakarta residents and frequent travelers! Mal Taman Anggrek is set to welcome the all-new Immigration Lounge, a dedicated space for all your immigration and passport needs. Slated to open soon, this convenient service hub will make it easier for visitors to handle immigration-related processes such as passport renewals, visa applications, and consultations, right in the heart of the mall. No more lengthy commutes to distant offices—the Immigration Lounge aims to bring essential services closer to the community in a comfortable, accessible environment.
+                    </p>
+
+                    <p class="text-lg md:text-xl">
+                        With its strategic location at one of Jakarta’s most iconic malls, the Immigration Lounge is designed to provide a seamless experience for both local residents and expats. Offering a modern, professional atmosphere, this new facility is expected to be a game-changer for those seeking efficient, hassle-free immigration services. Stay tuned for the grand opening and get ready to streamline your paperwork with ease at Mal Taman Anggrek’s newest addition!
+                    </p>
                 </div>
 
-                <!-- Center Image -->
-                <div class="mt-6 md:mt-0">
-                    <img src="public/images/kartini.webp" alt="Kartini Day Celebration" 
-                         class="w-full h-[300px] md:h-auto object-cover rounded-xl">
+                <!-- Share Section -->
+                <div class="flex items-center justify-center gap-4 mt-12 mb-8">
+                    <span class="text-gray-700 font-medium">Share this</span>
+                    <!-- WhatsApp -->
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center hover:opacity-90">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                    <!-- Email -->
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center hover:opacity-90">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="#" class="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center hover:opacity-90">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <!-- General Share -->
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center hover:opacity-90">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+                        </svg>
+                    </a>
                 </div>
-
-                <!-- Right Content -->
-                <div class="mt-6 md:mt-0 flex flex-col justify-end h-full">
-                    <!-- Both title and card are now at the bottom -->
-                    <div class="space-y-6">
-                        <!-- Title line -->
-                        <div class="flex items-center gap-4 text-gray-600 flex-wrap justify-center md:justify-start">
-                            <span class="text-base md:text-lg font-semibold">Celebration</span>
-                            <span>•</span>
-                            <span class="text-base md:text-lg">September 3, 2024</span>
-                        </div>
-                        
-                        <!-- Purple Card -->
-                        <div class="bg-[#7C3AED] text-white p-6 md:p-8 rounded-xl">
-                            <div class="space-y-4">
-                                <p class="text-base md:text-lg">In celebration of Kartini Day, Mall Taman Anggrek extends heartfelt wishes to all Indonesian women. This special day honors Raden Ajeng Kartini, a pioneer of women's empowerment and education in Indonesia. Her legacy continues to inspire...</p>
-                                <button class="w-full md:w-auto flex items-center justify-center text-white border border-white rounded-full px-6 py-3 hover:bg-white/10 transition-colors">
-                                    Read News
-                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </article>
         </section>
 
         <!-- News Grid Section -->
-        <section class="mt-8 md:mt-16 px-4 md:px-8">
-            <div class="mb-6 md:mb-8">
-                <h2 class="text-2xl md:text-4xl lg:text-[2.5rem] font-semibold text-[#333333] leading-tight mb-2">Important updates</h2>
-                <p class="text-base md:text-lg lg:text-[1.5rem] font-semibold text-[#9CA3AF] leading-relaxed">you might want to know</p>
+        <section class="mt-16 px-4 md:px-8">
+            <div class="mb-8 flex justify-between items-center">
+                <div>
+                    <p class="text-[1.5rem] text-[#9CA3AF] font-semibold">More</p>
+                    <h2 class="text-[2.5rem] font-semibold text-[#333333]">Like This</h2>
+                </div>
+                <button class="hidden md:block px-4 py-1.5 border border-[#6246EA] rounded-full text-[#6246EA] hover:bg-[#6246EA] hover:text-white transition-colors duration-200 font-medium">See All</button>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Card 1 -->
                 <div>
                     <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 1" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
@@ -205,105 +198,15 @@
                     <h3 class="font-semibold text-lg mb-2">📚 Opening Today! Gramedia Expo Book Store</h3>
                     <p class="text-gray-600 text-sm">Visit our newest Gramedia store and explore a vast collection of books, stationery, and more...</p>
                 </div>
-
-                <!-- Card 5 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 5" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Food</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">New Restaurant Opening: Taste of Asia</h3>
-                    <p class="text-gray-600 text-sm">Experience authentic Asian cuisine at our newest restaurant addition...</p>
-                </div>
-
-                <!-- Card 6 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 6" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Fashion</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Summer Collection Launch at ZARA</h3>
-                    <p class="text-gray-600 text-sm">Discover the latest summer trends with ZARA's new collection...</p>
-                </div>
-
-                <!-- Card 7 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 7" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Entertainment</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Weekend Movie Marathon</h3>
-                    <p class="text-gray-600 text-sm">Join us for an exciting weekend of back-to-back blockbuster movies...</p>
-                </div>
-
-                <!-- Card 8 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 8" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Technology</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Tech Bazaar: Latest Gadgets</h3>
-                    <p class="text-gray-600 text-sm">Explore cutting-edge technology at our monthly tech bazaar...</p>
-                </div>
-            </div>
-
-            <!-- Pagination - Hidden on mobile -->
-            <div class="hidden md:flex justify-center items-center gap-2 mt-8">
-                <button class="bg-gray-200 text-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                    </svg>
-                </button>
-                <span class="text-gray-600">1</span>
-                <span class="text-gray-400">/</span>
-                <span class="text-gray-600">10</span>
-                <button class="bg-[#7C3AED] text-white rounded-full w-8 h-8 flex items-center justify-center">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
             </div>
         </section>
 
         <!-- Mobile News Card Section - Only visible on mobile -->
         <section class="md:hidden mt-8">
-            <!-- Card with Background Image -->
-            <div class="relative h-[400px] rounded-xl overflow-hidden">
-                <!-- Background Image -->
-                <img src="public/images/passport.webp" alt="Immigration News" class="w-full h-full object-cover">
-                <!-- Gradient Overlay -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                
-                <!-- Top Content -->
-                <div class="absolute top-0 left-0 right-0 p-6 flex justify-between text-white">
-                    <span class="font-semibold text-2xl">Immigration</span>
-                    <span>September 3, 2024</span>
-                </div>
-
-                <!-- Bottom Content -->
-                <div class="absolute bottom-0 left-0 p-6 text-white">
-                    <h3 class="text-2xl font-semibold mb-3">Opening Soon: The Immigration Lounge at Mal Taman Anggrek!</h3>
-                    <a href="#" class="inline-flex items-center text-white">
-                        See more
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Load More Button -->
+            <!-- See All button -->
             <div class="mt-8 px-4">
                 <button class="w-full py-4 border border-[#7C3AED] text-[#7C3AED] rounded-xl font-medium">
-                    Load More News
+                    See All
                 </button>
             </div>
         </section>

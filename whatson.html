@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your site description">
-    <title>News</title>
+    <title>What's On</title>
     <!-- CSS Link (this will be our compiled CSS) -->
     <link rel="stylesheet" href="dist/output.css">
-    <link href="https://fonts.cdnfonts.com/css/marlion" rel="stylesheet">
+
 </head>
 
 <body>
@@ -78,7 +78,7 @@
         <section class="relative h-[500px] flex items-center justify-center rounded-2xl overflow-hidden">
             <!-- Background Image with Overlay -->
             <div class="absolute inset-0">
-                <img src="public/images/newshead.webp" alt="News Background" class="w-full h-full object-cover">
+                <img src="public/images/headwhatson.webp" alt="News Background" class="w-full h-full object-cover">
                 <!-- Dark Overlay -->
                 <div class="absolute inset-0 bg-black/50"></div>
             </div>
@@ -86,46 +86,62 @@
             <!-- Content -->
             <div class="relative text-center text-white z-10">
                 <img src="public/images/logomtawhite.webp" alt="MTA Logo" class="h-16 md:h-20 mx-auto mb-6">
-                <h1 class="text-4xl md:text-5xl font-semibold mb-4">News</h1>
+                <h1 class="text-4xl md:text-5xl font-semibold mb-4">What's On</h1>
                 <p class="text-lg md:text-xl px-4">
-                    Get the Latest News and Updates: Discover What's New<br class="hidden md:block">
+                    Get the Latest Updates: Discover What's New<br class="hidden md:block">
                     and Happening at Mall Taman Anggrek!
                 </p>
             </div>
         </section>
 
-        <!-- News Content Section - Hidden on mobile -->
-        <section class="hidden md:block mt-8 md:mt-16 px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- text Section -->
+        <section class="mt-8 md:mt-16 px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Left Content -->
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <h2 class="text-3xl md:text-5xl text-gray-400 font-semibold font-['Comic Sans MS']">What's On</h2>
+                        <h3 class="text-3xl md:text-5xl text-gray-700 font-semibold font-['Comic Sans MS']">Mall Taman Anggrek</h3>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="bg-gray-100 rounded-xl p-6 md:p-8">
+                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                        Explore Mal Taman Anggrek for the latest store openings, exciting events, and new product launches. Stay informed about all the fresh and trending offerings at the mall, ensuring you never miss out on new experiences and opportunities to shop and enjoy.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Whats on Content Section -->
+        <section class="mt-8 md:mt-16 px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                 <!-- Left Text Content -->
                 <div class="space-y-4 text-center md:text-left">
                     <div class="space-y-4">
                         <!-- Title line with bullet separator -->
                         <div class="flex items-center text-xl md:text-[2rem] justify-center md:justify-start">
-                            <span class="font-semibold text-gray-700">News</span>
+                            <span class="font-semibold text-gray-700">What's On</span>
                             <span class="mx-4">•</span>
                             <span class="text-gray-600">Featured</span>
                         </div>
                         <!-- Main heading -->
                         <h2 class="text-2xl md:text-[2.5rem] leading-tight font-semibold text-gray-700">
-                            Celebrates Kartini<br>
-                            Day: Honoring the<br>
-                            Spirit of<br>
-                            Empowerment
+                            Opening Soon: The Immigration Lounge at Mal Taman Anggrek!
                         </h2>
                     </div>
                 </div>
 
                 <!-- Center Image -->
-                <div class="mt-6 md:mt-0">
-                    <img src="public/images/kartini.webp" alt="Kartini Day Celebration" 
+                <div>
+                    <img src="public/images/passport.webp" alt="passport" 
                          class="w-full h-[300px] md:h-auto object-cover rounded-xl">
                 </div>
 
                 <!-- Right Content -->
-                <div class="mt-6 md:mt-0 flex flex-col justify-end h-full">
+                <div class="mt-2 md:mt-0 flex flex-col justify-end h-full">
                     <!-- Both title and card are now at the bottom -->
-                    <div class="space-y-6">
+                    <div class="space-y-2 md:space-y-6">
                         <!-- Title line -->
                         <div class="flex items-center gap-4 text-gray-600 flex-wrap justify-center md:justify-start">
                             <span class="text-base md:text-lg font-semibold">Celebration</span>
@@ -133,10 +149,10 @@
                             <span class="text-base md:text-lg">September 3, 2024</span>
                         </div>
                         
-                        <!-- Purple Card -->
-                        <div class="bg-[#7C3AED] text-white p-6 md:p-8 rounded-xl">
+                        <!-- Purple Card (now Teal) -->
+                        <div class="bg-[#1AAAAB] text-white p-6 md:p-8 rounded-xl">
                             <div class="space-y-4">
-                                <p class="text-base md:text-lg">In celebration of Kartini Day, Mall Taman Anggrek extends heartfelt wishes to all Indonesian women. This special day honors Raden Ajeng Kartini, a pioneer of women's empowerment and education in Indonesia. Her legacy continues to inspire...</p>
+                                <p class="text-base md:text-lg">Exciting news for Jakarta residents and frequent travelers! Mal Taman Anggrek is set to welcome the all-new Immigration Lounge, a dedicated space for all your immigration and passport needs. Slated to open soon, this convenient service hub...</p>
                                 <button class="w-full md:w-auto flex items-center justify-center text-white border border-white rounded-full px-6 py-3 hover:bg-white/10 transition-colors">
                                     Read News
                                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -153,7 +169,7 @@
         <!-- News Grid Section -->
         <section class="mt-8 md:mt-16 px-4 md:px-8">
             <div class="mb-6 md:mb-8">
-                <h2 class="text-2xl md:text-4xl lg:text-[2.5rem] font-semibold text-[#333333] leading-tight mb-2">Important updates</h2>
+                <h2 class="text-2xl md:text-4xl lg:text-[2.5rem] font-semibold text-[#333333] leading-tight mb-2">Latest updates</h2>
                 <p class="text-base md:text-lg lg:text-[1.5rem] font-semibold text-[#9CA3AF] leading-relaxed">you might want to know</p>
             </div>
 
