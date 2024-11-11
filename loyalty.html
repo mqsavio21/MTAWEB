@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your site description">
-    <title>What's On</title>
+    <title>Loyalty</title>
     <!-- CSS Link (this will be our compiled CSS) -->
     <link rel="stylesheet" href="dist/output.css">
 
@@ -76,251 +76,214 @@
     <main class="max-w-[100rem] mx-auto px-4 py-8">
         <!-- Hero Section with Background Image -->
         <section class="relative h-[500px] flex items-center justify-center rounded-2xl overflow-hidden">
-            <!-- Background Image with Overlay -->
+            <!-- Background Image with Gradient Overlay -->
             <div class="absolute inset-0">
-                <img src="public/images/headwhatson.webp" alt="headwhatson" class="w-full h-full object-cover">
-                <!-- Dark Overlay -->
-                <div class="absolute inset-0 bg-black/50"></div>
+                <img src="public/images/loyaltyhead.webp" alt="loyalty Background" class="w-full h-full object-cover">
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-[#E05DBF]/40 to-[#FAF6E6]/40"></div>
             </div>
             
             <!-- Content -->
-            <div class="relative text-center text-white z-10">
-                <img src="public/images/logomtawhite.webp" alt="MTA Logo" class="h-16 md:h-20 mx-auto mb-6">
-                <h1 class="text-4xl md:text-5xl font-semibold mb-4">What's On</h1>
-                <p class="text-lg md:text-xl px-4">
-                    Get the Latest Updates: Discover What's New<br class="hidden md:block">
-                    and Happening at Mall Taman Anggrek!
+            <div class="relative text-center text-gray-800 z-10 max-w-4xl mx-auto px-4">
+                <p class="text-xl md:text-2xl mb-2 font-semibold">Loyalty</p>
+                <h1 class="text-3xl md:text-5xl font-semibold mb-4 md:mb-6">
+                    Absolutely Yours Card: Go Digital<br class="hidden md:block">
+                    Earn Points, Enjoy Benefits!
+                </h1>
+                <p class="text-base md:text-xl max-w-3xl mx-auto">
+                    Experience the joy of shopping like never before with the Absolutely
+                    Yours Card (AYC), a premier loyalty program from Mal Taman Anggrek.
+                </p>
+                <p class="text-base md:text-xl mt-4 max-w-3xl mx-auto">
+                    Designed to celebrate and reward our loyal customers, AYC offers an
+                    exclusive pathway to a variety of perks, tailored offers, and delightful
+                    experiences. Whether you're shopping for fashion, dining out, or enjoying
+                    services, AYC makes every visit to the mall more rewarding.
                 </p>
             </div>
+            
         </section>
 
-        <!-- text Section -->
-        <section class="mt-8 md:mt-16 px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <!-- Left Content -->
-                <div class="space-y-6">
-                    <div class="space-y-2">
-                        <h2 class="text-3xl md:text-5xl text-gray-400 font-semibold font-['Comic Sans MS']">What's On</h2>
-                        <h3 class="text-3xl md:text-5xl text-gray-700 font-semibold font-['Comic Sans MS']">Mall Taman Anggrek</h3>
-                    </div>
-                </div>
-                <!-- Card -->
-                <div class="bg-gray-100 rounded-xl p-6 md:p-8">
-                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                        Explore Mal Taman Anggrek for the latest store openings, exciting events, and new product launches. Stay informed about all the fresh and trending offerings at the mall, ensuring you never miss out on new experiences and opportunities to shop and enjoy.
-                    </p>
-                </div>
+        <!-- How to Join Section -->
+        <section class="max-w-6xl mx-auto mt-8 md:mt-16 px-4">
+            <div class="text-center mb-8">
+                <p class="text-gray-600 mb-1">How to Join and Manage Membership</p>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-2">Joining the AYC Program</h2>
+                <p class="text-gray-600">Becoming a part of the AYC family is easy! Here's how you can get started:</p>
             </div>
-        </section>
 
-        <!-- Whats on Content Section -->
-        <section class="mt-8 md:mt-16 px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-                <!-- Left Text Content -->
-                <div class="space-y-4 text-center md:text-left">
-                    <div class="space-y-4">
-                        <!-- Title line with bullet separator -->
-                        <div class="flex items-center text-xl md:text-[2rem] justify-center md:justify-start">
-                            <span class="font-semibold text-gray-700">What's On</span>
-                            <span class="mx-4">•</span>
-                            <span class="text-gray-600">Featured</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Phone Image - Better mobile display -->
+                <div class="relative order-2 md:order-1">
+                    <img src="public/images/iphoneloyalty.webp" alt="AYC Mobile App Interface" 
+                         class="w-full max-w-[280px] md:max-w-[350px] mx-auto">
+                </div>
+
+                <!-- Right side - Accordion Content -->
+                <div class="space-y-4 order-1 md:order-2">
+                    <!-- Eligibility Section -->
+                    <div class="border-b border-gray-200 pb-4">
+                        <button class="flex justify-between items-center w-full text-left">
+                            <h3 class="text-xl font-semibold">Eligibility</h3>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2">
+                            <p class="text-gray-600">Open to anyone 17 years and older. Just upload a valid identification document (KTP/KITAS/Passport).</p>
                         </div>
-                        <!-- Main heading -->
-                        <h2 class="text-2xl md:text-[2.5rem] leading-tight font-semibold text-gray-700">
-                            Opening Soon: The Immigration Lounge at Mal Taman Anggrek!
-                        </h2>
                     </div>
-                </div>
 
-                <!-- Center Image -->
-                <div>
-                    <img src="public/images/passport.webp" alt="passport" 
-                         class="w-full h-[300px] md:h-auto object-cover rounded-xl">
-                </div>
-
-                <!-- Right Content -->
-                <div class="mt-2 md:mt-0 flex flex-col justify-end h-full">
-                    <!-- Both title and card are now at the bottom -->
-                    <div class="space-y-2 md:space-y-6">
-                        <!-- Title line -->
-                        <div class="flex items-center gap-4 text-gray-600 flex-wrap justify-center md:justify-start">
-                            <span class="text-base md:text-lg font-semibold">Celebration</span>
-                            <span>•</span>
-                            <span class="text-base md:text-lg">September 3, 2024</span>
+                    <!-- Registration Section -->
+                    <div class="border-b border-gray-200 pb-4">
+                        <button class="flex justify-between items-center w-full text-left">
+                            <h3 class="text-xl font-semibold">Registration</h3>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2">
+                            <p class="text-gray-600">Open to anyone 17 years and older. Just upload a valid identification document (KTP/KITAS/Passport).</p>
                         </div>
-                        
-                        <!-- Purple Card (now Teal) -->
-                        <div class="bg-[#1AAAAB] text-white p-6 md:p-8 rounded-xl">
-                            <div class="space-y-4">
-                                <p class="text-base md:text-lg">Exciting news for Jakarta residents and frequent travelers! Mal Taman Anggrek is set to welcome the all-new Immigration Lounge, a dedicated space for all your immigration and passport needs. Slated to open soon, this convenient service hub...</p>
-                                <button class="w-full md:w-auto flex items-center justify-center text-white border border-white rounded-full px-6 py-3 hover:bg-white/10 transition-colors">
-                                    Read News
-                                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                    </svg>
-                                </button>
-                            </div>
+                    </div>
+
+                    <!-- Manage Membership Section -->
+                    <div class="border-b border-gray-200 pb-4">
+                        <button class="flex justify-between items-center w-full text-left">
+                            <h3 class="text-xl font-semibold">Manage Membership</h3>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-2">
+                            <ul class="space-y-2 list-disc pl-4">
+                                <li class="text-gray-600">Deactivation: Should you choose to leave the AYC family, you can deactivate your membership at our Customer Service Counter located on the Ground Floor. Please note that accumulated points and raffle coupons will be forfeited upon deactivation.</li>
+                                <li class="text-gray-600">App Access: Already a member? Simply log in using your AYC member number and set a new password to continue enjoying your benefits.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- News Grid Section -->
-        <section class="mt-8 md:mt-16 px-4 md:px-8">
-            <div class="mb-6 md:mb-8">
-                <h2 class="text-2xl md:text-4xl lg:text-[2.5rem] font-semibold text-[#333333] leading-tight mb-2">Latest updates</h2>
-                <p class="text-base md:text-lg lg:text-[1.5rem] font-semibold text-[#9CA3AF] leading-relaxed">you might want to know</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                <!-- Card 1 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 1" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Immigration</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Best deal for OPPO Reno 11 at Erafone</h3>
-                    <p class="text-gray-600 text-sm">Exciting news for Jakarta residents and frequent travelers! Mall Taman Anggrek is set to welcome the all-new Immigration Lounge...</p>
-                </div>
-
-                <!-- Card 2 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 2" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Events</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Eid is coming! Stock your fridges with good goods.</h3>
-                    <p class="text-gray-600 text-sm">Get ready for the festive season with our special Eid promotion. Find everything you need for your celebration...</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 3" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Shopping</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Unbeatable Price Week: The Week</h3>
-                    <p class="text-gray-600 text-sm">Don't miss out on our biggest sale of the season. Amazing discounts across all stores...</p>
-                </div>
-
-                <!-- Card 4 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 4" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Books</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">📚 Opening Today! Gramedia Expo Book Store</h3>
-                    <p class="text-gray-600 text-sm">Visit our newest Gramedia store and explore a vast collection of books, stationery, and more...</p>
-                </div>
-
-                <!-- Card 5 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 5" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Food</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">New Restaurant Opening: Taste of Asia</h3>
-                    <p class="text-gray-600 text-sm">Experience authentic Asian cuisine at our newest restaurant addition...</p>
-                </div>
-
-                <!-- Card 6 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 6" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Fashion</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Summer Collection Launch at ZARA</h3>
-                    <p class="text-gray-600 text-sm">Discover the latest summer trends with ZARA's new collection...</p>
-                </div>
-
-                <!-- Card 7 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 7" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Entertainment</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Weekend Movie Marathon</h3>
-                    <p class="text-gray-600 text-sm">Join us for an exciting weekend of back-to-back blockbuster movies...</p>
-                </div>
-
-                <!-- Card 8 -->
-                <div>
-                    <img src="public/images/newsgridimg.webp" loading="lazy" alt="News 8" class="w-full aspect-[4/3] object-cover rounded-xl mb-4">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-gray-600 text-sm">Technology</span>
-                        <span class="text-gray-400">•</span>
-                        <span class="text-gray-600 text-sm">September 3, 2024</span>
-                    </div>
-                    <h3 class="font-semibold text-lg mb-2">Tech Bazaar: Latest Gadgets</h3>
-                    <p class="text-gray-600 text-sm">Explore cutting-edge technology at our monthly tech bazaar...</p>
-                </div>
-            </div>
-
-            <!-- Pagination - Hidden on mobile -->
-            <div class="hidden md:flex justify-center items-center gap-2 mt-8">
-                <button class="bg-gray-200 text-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            <!-- Action Buttons - Better mobile layout -->
+            <div class="flex flex-col md:flex-row justify-center gap-4 mt-8 mb-8 px-4">
+                <a href="#" class="w-full md:w-auto text-center inline-flex items-center justify-center px-8 py-3 border-2 border-[#22C55E] text-[#22C55E] rounded-lg hover:bg-[#22C55E]/5 transition-colors font-medium">
+                    Read FAQ
+                </a>
+                <a href="#" class="w-full md:w-auto text-center inline-flex items-center justify-center px-8 py-3 bg-[#22C55E] text-white rounded-lg hover:bg-[#22C55E]/90 transition-colors font-medium">
+                    Open AYC App
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                     </svg>
-                </button>
-                <span class="text-gray-600">1</span>
-                <span class="text-gray-400">/</span>
-                <span class="text-gray-600">10</span>
-                <button class="bg-[#7C3AED] text-white rounded-full w-8 h-8 flex items-center justify-center">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
+                </a>
             </div>
         </section>
-
-        <!-- Mobile News Card Section - Only visible on mobile -->
-        <section class="md:hidden mt-8">
-            <!-- Card with Background Image -->
-            <div class="relative h-[400px] rounded-xl overflow-hidden">
-                <!-- Background Image -->
-                <img src="public/images/passport.webp" alt="Immigration News" class="w-full h-full object-cover">
-                <!-- Gradient Overlay -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                
-                <!-- Top Content -->
-                <div class="absolute top-0 left-0 right-0 p-6 flex justify-between text-white">
-                    <span class="font-semibold text-2xl">Immigration</span>
-                    <span>September 3, 2024</span>
+        
+        <!-- FAQ Section -->
+        <section class="bg-gray-50 py-12 md:py-16 mt-8 md:mt-16">
+            <div class="max-w-6xl mx-auto px-4">
+                <!-- Header -->
+                <div class="text-center mb-8">
+                    <p class="text-gray-600 mb-2">Frequently Asked Questions</p>
+                    <h2 class="text-3xl font-semibold mb-4">Questions About AYC You Might Have</h2>
+                    <p class="text-gray-600">Becoming a part of the AYC family is easy! Here's how you can get started:</p>
                 </div>
 
-                <!-- Bottom Content -->
-                <div class="absolute bottom-0 left-0 p-6 text-white">
-                    <h3 class="text-2xl font-semibold mb-3">Opening Soon: The Immigration Lounge at Mal Taman Anggrek!</h3>
-                    <a href="#" class="inline-flex items-center text-white">
-                        See more
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                        </svg>
-                    </a>
+                <!-- Filter Buttons - Make scrollable on mobile -->
+                <div class="flex overflow-x-auto md:flex-wrap justify-start md:justify-center gap-3 mb-8 md:mb-12 pb-4 md:pb-0">
+                    <button class="bg-[#14B8A6] text-white px-6 py-2 rounded-full whitespace-nowrap">Membership management</button>
+                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full whitespace-nowrap">Points & Rewards</button>
+                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full whitespace-nowrap">Transaction Validation</button>
+                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full whitespace-nowrap">Application Usage</button>
+                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full whitespace-nowrap">General Information</button>
                 </div>
-            </div>
 
-            <!-- Load More Button -->
-            <div class="mt-8 px-4">
-                <button class="w-full py-4 border border-[#7C3AED] text-[#7C3AED] hover:bg-[#7C3AED] hover:text-white transition-colors duration-300 rounded-xl font-medium">
-                    Load More News
-                </button>
+                <!-- FAQ Grid - Adjust spacing -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="p-4 md:p-6">
+                        <button class="flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg font-semibold">How do I deactivate my membership?</h3>
+                            <svg class="w-6 h-6 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-4">
+                            <p class="text-gray-600">Members who wish to stop participating in the AYC Program can deactivate their membership at the Customer Service Counter on the Ground floor. Accumulated points and raffle coupons will be forfeited and cannot be transferred.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="p-4 md:p-6">
+                        <button class="flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg font-semibold">How do I join the AYC Program as a member?</h3>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-4">
+                            <p class="text-gray-600">New members must be at least 17 years old and upload an identification card (KTP/KITAS/Passport) and fill out personal data accurately and completely on the application.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="p-4 md:p-6">
+                        <button class="flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg font-semibold">How do I download the application if I am already an AYC Program member</h3>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-4">
+                            <p class="text-gray-600">For existing AYC members, enter your AYC member number and create a new password by following the steps in the application.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="p-4 md:p-6">
+                        <button class="flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg font-semibold">Are there different membership levels?</h3>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-4">
+                            <p class="text-gray-600">There are two types of AYC membership levels: Regular Member and VIP Member.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="p-4 md:p-6">
+                        <button class="flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg font-semibold">What are the benefits for AYC VIP Members?</h3>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-4">
+                            <p class="text-gray-600">AYC VIP Members are entitled to the following benefits:</p>
+                            <ul class="list-disc pl-5 mt-2 text-gray-600">
+                                <li>Free Premium Parking located in the P11 parking area.</li>
+                                <li>Additional 10 points on your birthday.</li>
+                                <li>Discounted points for redeeming rewards.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="p-4 md:p-6">
+                        <button class="flex justify-between items-center w-full text-left">
+                            <h3 class="text-lg font-semibold">How can Regular AYC Members upgrade to VIP Members?</h3>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="mt-4">
+                            <p class="text-gray-600">Regular AYC Members can upgrade to VIP Membership by spending a minimum of Rp. 50,000,000 (fifty million rupiah) within one year.</p>
+                            <p class="text-gray-600 mt-2">VIP AYC Members can maintain their VIP status by spending a minimum of Rp. 50,000,000 (fifty million rupiah) within one year from the date the membership was upgraded in the system. If not, the membership level will be downgraded to Regular Member.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -334,7 +297,7 @@
             </div>
 
             <div class="max-w-7xl mx-auto px-4 md:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-start">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 items-start">
                     <!-- Social Media -->
                     <div class="py-4 flex flex-col items-center md:items-start">
                         <h3 class="text-gray-900 font-bold mb-6 text-center md:text-left">Follow us on social</h3>
