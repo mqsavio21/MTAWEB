@@ -1053,6 +1053,14 @@ video {
   height: 180px;
 }
 
+.h-\[285px\] {
+  height: 285px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
 .max-h-\[600px\] {
   max-height: 600px;
 }
