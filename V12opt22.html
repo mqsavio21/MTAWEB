@@ -74,6 +74,7 @@
     </header>
 
     <main class="max-w-[100rem] mx-auto px-4 py-8">
+        
         <section class="relative">
             <div class="grid grid-cols-2 items-start mb-4">
                 <!-- Headline Text - Left column -->
@@ -134,6 +135,192 @@
                 </div>
             </div>
         </section>
+
+        <!-- Loyalty Program Section -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <!-- Container with gradient background -->
+                <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl overflow-hidden p-8 md:p-12">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <!-- Left Content -->
+                        <div class="space-y-6">
+                            <div class="space-y-4">
+                                <h2 class="text-4xl md:text-5xl font-semibold">
+                                    <span class="text-pink-400">Shop, Earn Points,</span><br>
+                                    <span class="text-indigo-500">Get Instant Rewards</span>
+                                </h2>
+                                <p class="text-gray-600 text-lg">
+                                    Join to earn points for every rupiah all year, every time 
+                                    you shop and redeem to get your rewards at Mall 
+                                    Taman Anggrek
+                                </p>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4">
+                                <a href="#" class="inline-flex items-center px-6 py-3 bg-indigo-500 text-white rounded-full hover:bg-indigo-600 transition-colors">
+                                    Open AYC App
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="inline-flex items-center px-6 py-3 text-indigo-500 border border-indigo-500 rounded-full hover:bg-indigo-50 transition-colors">
+                                    Read FAQ
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right Content - Background with Card Overlay -->
+                        <div class="relative h-[400px] rounded-2xl overflow-hidden">
+                            <!-- Background Image -->
+                            <div class="absolute inset-0">
+                                <img 
+                                    src="public/images/bgloyaltyprogram.webp" 
+                                    alt="Loyalty Program Background" 
+                                    class="w-full h-full object-cover"
+                                >
+                                <!-- Dark overlay for better contrast -->
+                                <div class="absolute inset-0 bg-black/20"></div>
+                            </div>
+                            
+                            <!-- AYC Card Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <img 
+                                    src="public/images/ayccard.webp" 
+                                    alt="AYC Membership Cards" 
+                                    class="w-4/5 max-w-md transform rotate-12 drop-shadow-2xl"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Updates Section -->
+        <section class="mt-16 py-16 bg-[#F0FDFA]">
+            <div class="max-w-7xl mx-auto px-4">
+                <!-- Header with "See All" link -->
+                <div class="flex justify-between items-center mb-8">
+                    <div>
+                        <h2 class="text-3xl font-semibold text-gray-800">Important updates</h2>
+                        <p class="text-3xl font-semibold text-gray-500">you might want to know</p>
+                    </div>
+                    <a href="/news" class="flex items-center text-[#818CF8] hover:text-[#818CF8]/80 rounded-full border border-[#818CF8] px-4 py-1">
+                        See All
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- News Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Kartini Day Card -->
+                    <div class="bg-white rounded-3xl overflow-hidden p-4">
+                        <div class="aspect-[4/3] mb-4">
+                            <img src="public/images/kartini.webp" alt="Kartini Day" class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <svg class="w-4 h-4 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="text-gray-500">21 April 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Happy kartini day! Empowering Women Celebrating Kartini's Legacy</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Enim scelerisque dolor fames nisi duis eget tortor augue facilisis. Nascetur erat cursus enim magna mauris vehicula volutpat porttitor aliquet nulla scelerisque.</p>
+                    </div>
+
+                    <!-- Electronic City Card -->
+                    <div class="bg-gradient-to-br from-pink-100 to-pink-200 rounded-3xl overflow-hidden p-4">
+                        <div class="aspect-[4/3] mb-4">
+                            <img src="public/images/electroniccity.webp" alt="Electronic City Deals" class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <svg class="w-4 h-4 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="text-gray-500">19 April 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Unbeatable prices of the week at Electronic City</h3>
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur. Enim scelerisque dolor fames nisi duis eget tortor augue facilisis.</p>
+                        <a href="#" class="inline-flex items-center text-white bg-[#EC4899] px-6 py-2 rounded-full hover:bg-[#EC4899]/90">
+                            Read now
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Eid Card -->
+                    <div class="bg-white rounded-3xl overflow-hidden p-4">
+                        <div class="aspect-[4/3] mb-4">
+                            <img src="public/images/iedfitri.webp" alt="Eid Celebration" class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <svg class="w-4 h-4 text-gray-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <span class="text-gray-500">14 April 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Happy Eid! Mall Taman Anggrek operational hours during Eid.</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur. Enim scelerisque dolor fames nisi duis eget tortor augue facilisis. Nascetur erat cursus enim magna mauris vehicula volutpat porttitor aliquet nulla scelerisque.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl text-gray-500 font-medium mb-2">Get in touch with us</h2>
+                <h3 class="text-4xl text-gray-700 font-medium">through social media</h3>
+            </div>
+
+            <!-- Instagram Profile Link -->
+            <div class="flex justify-center mb-12">
+                <a href="https://instagram.com/maltamananggrek" 
+                   class="group relative flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#A020F0]">
+                    <!-- Instagram icon -->
+                    <span class="w-5 h-5 text-[#A020F0]">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </span>
+                    
+                    <!-- Text -->
+                    <span class="text-[#A020F0] font-medium">
+                        Maltamananggrek
+                    </span>
+                </a>
+            </div>
+
+            <!-- Instagram Feed Grid -->
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <!-- Instagram Post 1 -->
+                    <div class="relative group">
+                        <img src="public/images/ig1.webp" alt="Fitness activity" class="w-full aspect-square object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                    <!-- Instagram Post 2 -->
+                    <div class="relative group">
+                        <img src="public/images/ig2.webp" alt="Gramedia store opening" class="w-full aspect-square object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                    <!-- Instagram Post 3 -->
+                    <div class="relative group">
+                        <img src="public/images/ig3.webp" alt="Specialty drinks" class="w-full aspect-square object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                    <!-- Instagram Post 4 -->
+                    <div class="relative group">
+                        <img src="public/images/ig4.webp" alt="Coffee art" class="w-full aspect-square object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
