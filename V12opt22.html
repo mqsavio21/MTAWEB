@@ -7,6 +7,7 @@
     <title>Mall Taman Anggrek</title>
     <!-- CSS Link (this will be our compiled CSS) -->
     <link rel="stylesheet" href="dist/output.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -73,9 +74,9 @@
         </div>
     </header>
 
-    <main class="max-w-[100rem] mx-auto px-4 py-8">
+    <main>
         
-        <section class="relative">
+        <section class="relative px-4 py-8">
             <div class="grid grid-cols-2 items-start mb-4">
                 <!-- Headline Text - Left column -->
                 <div>
@@ -136,13 +137,182 @@
             </div>
         </section>
 
+                <!-- What's On Section -->
+                <section class="py-16 px-4">
+                    <!-- Header with See All link -->
+                    <div class="flex justify-between items-center mb-8">
+                        <div>
+                            <h2 class="text-3xl text-gray-400 font-medium">See What's On</h2>
+                            <h3 class="text-3xl text-gray-700 font-medium">Mall Taman Anggrek</h3>
+                        </div>
+                        <a href="/whats-on" class="flex items-center text-gray-700 hover:text-gray-900">
+                            See All
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+        
+                    <!-- Grid Layout -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Main Feature Card -->
+                        <div class="md:col-span-2">
+                            <div class="relative rounded-3xl overflow-hidden group h-[400px]">
+                                <img src="public/images/immigration.webp" alt="Immigration Lounge" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-6 text-white">
+                                    <p class="text-sm mb-2">September 3, 2024</p>
+                                    <h3 class="text-2xl font-semibold mb-4">Opening Soon: The Immigration Lounge at Mal Taman Anggrek!</h3>
+                                    <a href="#" class="inline-flex items-center text-white">
+                                        See more
+                                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Right Side Cards -->
+                        <div class="space-y-6">
+                            <!-- Ranch Market Card -->
+                            <div class="relative rounded-3xl overflow-hidden h-[180px] group">
+                                <img src="public/images/ranchmarket.webp" alt="Ranch Market" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-4 text-white">
+                                    <p class="text-sm mb-1">April 16, 2024</p>
+                                    <h3 class="text-lg font-medium">Eid is coming! Stock your fridges with good goods.</h3>
+                                </div>
+                            </div>
+        
+                            <!-- Mothercare Card -->
+                            <div class="relative rounded-3xl overflow-hidden h-[180px] group">
+                                <img src="public/images/mothercare.webp" alt="Mothercare" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-4 text-white">
+                                    <p class="text-sm mb-1">April 13, 2024</p>
+                                    <h3 class="text-lg font-medium">Love your loved ones! Save up to 50%</h3>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Additional Cards Row -->
+                        <div class="relative rounded-3xl overflow-hidden h-[180px] group">
+                            <img src="public/images/erafone.webp" alt="Erafone" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-4 text-white">
+                                <p class="text-sm mb-1">April 12, 2024</p>
+                                <h3 class="text-lg font-medium">Best deal for OPPO Reno 11 at Erafone</h3>
+                            </div>
+                        </div>
+        
+                        <!-- Newsletter Card -->
+                        <div class="relative rounded-3xl overflow-hidden h-[180px] bg-gradient-to-r from-violet-500 to-cyan-500">
+                            <div class="absolute inset-0 p-6 text-white flex flex-col justify-between">
+                                <h3 class="text-xl font-medium">Don't miss our latest offers & promotions</h3>
+                                <button class="bg-white text-gray-800 px-6 py-2 rounded-full w-fit hover:bg-gray-100 transition-colors">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+        <!-- About Us MTA Section -->
+        <section class="py-16" style="background-color: rgba(115, 78, 234, 0.05)">
+            <div class="px-4">
+                <!-- About Us Header -->
+                <div class="mb-12 px-3">
+                    <p class="text-sm text-gray-500 mb-2 font-semibold">About Us</p>
+                    <h2 class="text-3xl md:text-4xl mb-2 font-semibold">
+                        <span class="text-pink-400 font-semibold">Setting up the new standard</span>
+                    </h2>
+                    <h3 class="text-3xl md:text-4xl text-indigo-500 font-semibold">
+                        of Shopping mall in Indonesia
+                    </h3>
+                </div>
+
+                <!-- Image Grid with Overlapping Description -->
+                <div class="flex flex-col md:flex-row gap-4 relative">
+                    <!-- Left Image (Portrait) -->
+                    <div class="md:w-[35%] rounded-3xl overflow-hidden h-[500px]">
+                        <img 
+                            src="public/images/v12mtapot.webp" 
+                            alt="Mall Taman Anggrek Portrait View" 
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+
+                    <!-- Right Image (Landscape) -->
+                    <div class="md:w-[65%] rounded-3xl overflow-hidden h-[500px]">
+                        <img 
+                            src="public/images/v12mtalands.webp" 
+                            alt="Mall Taman Anggrek Landscape View" 
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+
+                    <!-- Overlapping Description Card -->
+                    <div class="absolute top-2/3 left-12 md:left-12 translate-y-[20%] z-40">
+                        <div class="bg-white p-6 md:p-8 rounded-3xl max-w-lg shadow-lg">
+                            <h4 class="text-2xl md:text-3xl font-bold mb-3">Mall Taman Anggrek</h4>
+                            <p class="text-gray-600 mb-4 text-sm md:text-base">
+                                A vibrant and alluring paradise in the heart of West Jakarta, 
+                                brimming with endless shopping, dining, recreational and 
+                                entertainment opportunities.
+                            </p>
+                            <a href="/about" class="inline-flex items-center bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 text-sm md:text-base">
+                                Read More
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Insightful Facts - Position Adjustments -->
+            <div class="flex justify-end mt-8 mr-24">
+                <div class="p-6 rounded-3xl">
+                    <h3 class="text-left font-medium mb-8 text-lg">Insightful Facts</h3>
+                    <div class="flex gap-24">
+                        <!-- Fact 1 -->
+                        <div class="flex flex-col">
+                            <p class="text-xs text-gray-400 mb-2">01</p>
+                            <p class="text-5xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">18 Million</p>
+                            <p class="text-gray-600">Annual Customer Traffic</p>
+                        </div>
+                        <!-- Fact 2 -->
+                        <div class="flex flex-col">
+                            <p class="text-xs text-gray-400 mb-2">02</p>
+                            <p class="text-5xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">4000</p>
+                            <p class="text-gray-600">Parking spaces</p>
+                        </div>
+                        <!-- Fact 3 -->
+                        <div class="flex flex-col">
+                            <p class="text-xs text-gray-400 mb-2">03</p>
+                            <p class="text-5xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">700</p>
+                            <p class="text-gray-600">Retail units</p>
+                        </div>
+                        <!-- Fact 4 -->
+                        <div class="flex flex-col">
+                            <p class="text-xs text-gray-400 mb-2">04</p>
+                            <p class="text-5xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">7</p>
+                            <p class="text-gray-600">Retail floors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Loyalty Program Section -->
         <section class="py-16">
-            <div class="max-w-7xl mx-auto px-4 md:px-8">
-                <!-- Container with gradient background -->
-                <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl overflow-hidden p-8 md:p-12">
-                    <div class="grid md:grid-cols-2 gap-8 items-center">
-                        <!-- Left Content -->
+            <div class="max-w-[90rem] mx-auto px-4 md:px-8">
+                <!-- Container with split background -->
+                <div class="grid md:grid-cols-2 rounded-3xl overflow-hidden">
+                    <!-- Left Content with gradient - Added min-h-[500px] -->
+                    <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 md:p-12 min-h-[500px]">
                         <div class="space-y-6">
                             <div class="space-y-4">
                                 <h2 class="text-4xl md:text-5xl font-semibold">
@@ -168,28 +338,25 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Right Content - Background with Card Overlay -->
-                        <div class="relative h-[400px] rounded-2xl overflow-hidden">
-                            <!-- Background Image -->
-                            <div class="absolute inset-0">
-                                <img 
-                                    src="public/images/bgloyaltyprogram.webp" 
-                                    alt="Loyalty Program Background" 
-                                    class="w-full h-full object-cover"
-                                >
-                                <!-- Dark overlay for better contrast -->
-                                <div class="absolute inset-0 bg-black/20"></div>
-                            </div>
-                            
-                            <!-- AYC Card Overlay -->
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <img 
-                                    src="public/images/ayccard.webp" 
-                                    alt="AYC Membership Cards" 
-                                    class="w-4/5 max-w-md transform rotate-12 drop-shadow-2xl"
-                                >
-                            </div>
+                    <!-- Right Content - Full background image - Matched height -->
+                    <div class="relative h-full min-h-[500px]">
+                        <img 
+                            src="public/images/bgloyaltyprogram.webp" 
+                            alt="Loyalty Program Background" 
+                            class="absolute inset-0 w-full h-full object-cover"
+                        >
+                        <!-- Dark overlay -->
+                        <div class="absolute inset-0 bg-black/20"></div>
+                        
+                        <!-- AYC Card Overlay - Adjusted positioning and size -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img 
+                                src="public/images/v12ayc.webp" 
+                                alt="AYC Membership v12" 
+                                class="w-4/5 md:w-3/5 transform -rotate-12 drop-shadow-2xl hover:rotate-0 transition-transform duration-300"
+                            >
                         </div>
                     </div>
                 </div>
