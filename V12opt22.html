@@ -137,84 +137,102 @@
             </div>
         </section>
 
-                <!-- What's On Section -->
-                <section class="py-16 px-4">
-                    <!-- Header with See All link -->
-                    <div class="flex justify-between items-center mb-8">
-                        <div>
-                            <h2 class="text-3xl text-gray-400 font-medium">See What's On</h2>
-                            <h3 class="text-3xl text-gray-700 font-medium">Mall Taman Anggrek</h3>
+        <!-- What's On Section -->
+        <section class="py-16 px-4">
+            <!-- Header with See All link -->
+            <div class="flex justify-between items-center mb-8">
+                <div>
+                    <h2 class="text-3xl text-gray-400 font-medium">See What's On</h2>
+                    <h3 class="text-3xl text-gray-700 font-medium">Mall Taman Anggrek</h3>
+                </div>
+                <a href="/whats-on" class="flex items-center text-gray-700 hover:text-gray-900">
+                    See All
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+                    
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Left Side - Main Feature Card -->
+                <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
+                    <img src="public/images/whatsonv12.webp" alt="Immigration Lounge" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute inset-0 flex flex-col justify-between p-8">
+                        <div class="flex justify-between items-start text-white">
+                            <h4 class="text-2xl font-medium">Immigration</h4>
+                            <p class="text-xl font-medium">September 3, 2024</p>
                         </div>
-                        <a href="/whats-on" class="flex items-center text-gray-700 hover:text-gray-900">
-                            See All
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                            </svg>
-                        </a>
+                        <div class="text-white">
+                            <h3 class="text-4xl font-bold mb-6">Opening Soon: The Immigration Lounge at Mal Taman Anggrek!</h3>
+                            <a href="#" class="inline-flex items-center text-white">
+                                See more →
+                            </a>
+                        </div>
                     </div>
-        
-                    <!-- Grid Layout -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Left Side - Main Feature Card -->
-                        <div class="relative rounded-3xl overflow-hidden group h-[600px]">
-                            <img src="public/images/passport.webp" alt="Immigration Lounge" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 p-6 text-white">
-                                <p class="text-sm mb-2">September 3, 2024</p>
-                                <h3 class="text-2xl font-semibold mb-4">Opening Soon: The Immigration Lounge at Mal Taman Anggrek!</h3>
-                                <a href="#" class="inline-flex items-center text-white">
-                                    See more
-                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                </div>
 
-                        <!-- Right Side - Grid of 4 -->
-                        <div class="grid grid-cols-2 gap-6">
-                            <!-- Ranch Market Card -->
-                            <div class="relative rounded-3xl overflow-hidden h-[285px] group">
-                                <img src="public/images/newsgridimg.webp" alt="Ranch Market" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <div class="absolute bottom-0 left-0 p-4 text-white">
-                                    <p class="text-sm mb-1">April 16, 2024</p>
-                                    <h3 class="text-lg font-medium">Eid is coming! Stock your fridges with good goods.</h3>
-                                </div>
+                <!-- Right Side - Grid of 4 --> 
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Ranch Market Card -->
+                    <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
+                        <img src="public/images/newsgridimg.webp" alt="Ranch Market" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute inset-0 flex flex-col justify-between p-6">
+                            <div class="flex justify-between items-start text-white">
+                                <h4 class="text-sm font-medium">Ranch Market</h4>
+                                <p class="text-sm font-medium">April 13, 2024</p>
                             </div>
-
-                            <!-- Mothercare Card -->
-                            <div class="relative rounded-3xl overflow-hidden h-[285px] group">
-                                <img src="public/images/newsgridimg.webp" alt="Mothercare" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <div class="absolute bottom-0 left-0 p-4 text-white">
-                                    <p class="text-sm mb-1">April 13, 2024</p>
-                                    <h3 class="text-lg font-medium">Love your loved ones! Save up to 50%</h3>
-                                </div>
-                            </div>
-
-                            <!-- Erafone Card -->
-                            <div class="relative rounded-3xl overflow-hidden h-[285px] group">
-                                <img src="public/images/newsgridimg.webp" alt="Erafone" class="w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <div class="absolute bottom-0 left-0 p-4 text-white">
-                                    <p class="text-sm mb-1">April 12, 2024</p>
-                                    <h3 class="text-lg font-medium">Best deal for OPPO Reno 11 at Erafone</h3>
-                                </div>
-                            </div>
-
-                            <!-- Newsletter Card -->
-                            <div class="relative rounded-3xl overflow-hidden h-[285px] bg-gradient-to-r from-violet-500 to-cyan-500">
-                                <div class="absolute inset-0 p-6 text-white flex flex-col justify-between">
-                                    <h3 class="text-xl font-medium">Don't miss our latest offers & promotions</h3>
-                                    <button class="bg-white text-gray-800 px-6 py-2 rounded-full w-fit hover:bg-gray-100 transition-colors">
-                                        Subscribe
-                                    </button>
-                                </div>
+                            <div class="text-white">
+                                <h3 class="text-lg font-medium">Eid is coming! Stock your fridges with good goods.</h3>
                             </div>
                         </div>
                     </div>
-                </section>
+
+                    <!-- Mothercare Card -->
+                    <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
+                        <img src="public/images/newsgridimg.webp" alt="Mothercare" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute inset-0 flex flex-col justify-between p-6">
+                            <div class="flex justify-between items-start text-white">
+                                <h4 class="text-sm font-medium">Mothercare</h4>
+                                <p class="text-sm font-medium">April 13, 2024</p>
+                            </div>
+                            <div class="text-white">
+                                <h3 class="text-lg font-medium">Love your loved ones! Save up to 50%.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Erafone Card -->       
+                    <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
+                        <img src="public/images/newsgridimg.webp" alt="Erafone" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute inset-0 flex flex-col justify-between p-6">
+                            <div class="flex justify-between items-start text-white">
+                                <h4 class="text-sm font-medium">Erafone</h4>
+                                <p class="text-sm font-medium">April 13, 2024</p>
+                            </div>
+                            <div class="text-white">
+                                <h3 class="text-lg font-medium">Best deal for OPPO Reno 11 at Erafone</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Card -->
+                    <div class="relative rounded-3xl overflow-hidden aspect-[4/3] bg-gradient-to-r from-violet-500 to-cyan-500">
+                        <div class="absolute inset-0 p-6 flex flex-col gap-4">
+                            <h4 class="text-white font-medium">Newsletter</h4>
+                            <h3 class="text-xl text-white font-medium mt-4">Don't miss our latest offers & promotions</h3>
+                            <button class="bg-[#1AAAAB] text-lg text-white px-4 py-2 rounded-full w-fit hover:bg-[#1AAAAB] transition-colors">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <!-- About Us MTA Section -->
         <section class="py-16" style="background-color: rgba(115, 78, 234, 0.05)">
