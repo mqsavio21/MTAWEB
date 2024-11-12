@@ -37,4 +37,60 @@ document.addEventListener('click', (e) => {
     if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
         mobileMenu.classList.add('hidden');
     }
+});
+
+// Facility interaction handling
+document.addEventListener('DOMContentLoaded', () => {
+    const facilityItems = document.querySelectorAll('.facility-item');
+    let activeDetail = null;
+
+    facilityItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const facilityId = item.dataset.facility;
+            const detailElement = document.getElementById(`${facilityId}-details`);
+
+            // If there's an active detail and it's different from the clicked one, hide it
+            if (activeDetail && activeDetail !== detailElement) {
+                activeDetail.classList.add('hidden');
+                activeDetail.classList.remove('active');
+            }
+
+            // Toggle the clicked detail
+            if (detailElement.classList.contains('hidden')) {
+                // Show the detail
+                detailElement.classList.remove('hidden');
+                // Use setTimeout to ensure the transition happens
+                setTimeout(() => {
+                    detailElement.classList.add('active');
+                }, 10);
+                activeDetail = detailElement;
+            } else {
+                // Hide the detail
+                detailElement.classList.remove('active');
+                setTimeout(() => {
+                    detailElement.classList.add('hidden');
+                }, 300);
+                activeDetail = null;
+            }
+        });
+    });
+
+    // Close active detail when clicking outside
+    document.addEventListener('click', () => {
+        if (activeDetail) {
+            activeDetail.classList.remove('active');
+            setTimeout(() => {
+                activeDetail.classList.add('hidden');
+            }, 300);
+            activeDetail = null;
+        }
+    });
+
+    // Prevent clicks within the detail panel from closing it
+    document.querySelectorAll('.facility-details').forEach(detail => {
+        detail.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    });
 }); 
