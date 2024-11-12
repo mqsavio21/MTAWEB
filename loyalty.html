@@ -124,39 +124,39 @@
                 <div class="space-y-4 order-1 md:order-2">
                     <!-- Eligibility Section -->
                     <div class="border-b border-gray-200 pb-4">
-                        <button class="flex justify-between items-center w-full text-left">
+                        <button onclick="toggleAccordion('eligibility-content')" class="flex justify-between items-center w-full text-left">
                             <h3 class="text-xl font-semibold">Eligibility</h3>
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg id="eligibility-icon" class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="mt-2">
+                        <div id="eligibility-content" class="mt-2 hidden">
                             <p class="text-gray-600">Open to anyone 17 years and older. Just upload a valid identification document (KTP/KITAS/Passport).</p>
                         </div>
                     </div>
 
                     <!-- Registration Section -->
                     <div class="border-b border-gray-200 pb-4">
-                        <button class="flex justify-between items-center w-full text-left">
+                        <button onclick="toggleAccordion('registration-content')" class="flex justify-between items-center w-full text-left">
                             <h3 class="text-xl font-semibold">Registration</h3>
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg id="registration-icon" class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="mt-2">
+                        <div id="registration-content" class="mt-2 hidden">
                             <p class="text-gray-600">Open to anyone 17 years and older. Just upload a valid identification document (KTP/KITAS/Passport).</p>
                         </div>
                     </div>
 
                     <!-- Manage Membership Section -->
                     <div class="border-b border-gray-200 pb-4">
-                        <button class="flex justify-between items-center w-full text-left">
+                        <button onclick="toggleAccordion('membership-content')" class="flex justify-between items-center w-full text-left">
                             <h3 class="text-xl font-semibold">Manage Membership</h3>
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg id="membership-icon" class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="mt-2">
+                        <div id="membership-content" class="mt-2 hidden">
                             <ul class="space-y-2 list-disc pl-4">
                                 <li class="text-gray-600">Deactivation: Should you choose to leave the AYC family, you can deactivate your membership at our Customer Service Counter located on the Ground Floor. Please note that accumulated points and raffle coupons will be forfeited upon deactivation.</li>
                                 <li class="text-gray-600">App Access: Already a member? Simply log in using your AYC member number and set a new password to continue enjoying your benefits.</li>
@@ -190,78 +190,93 @@
                     <p class="text-gray-600">Becoming a part of the AYC family is easy! Here's how you can get started:</p>
                 </div>
 
-                <!-- Filter Buttons - Make scrollable on mobile -->
-                <div class="flex overflow-x-auto md:flex-wrap justify-start md:justify-center gap-3 mb-8 md:mb-12 pb-4 md:pb-0">
-                    <button class="bg-[#14B8A6] text-white px-6 py-2 rounded-full whitespace-nowrap">Membership management</button>
-                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full whitespace-nowrap">Points & Rewards</button>
-                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full whitespace-nowrap">Transaction Validation</button>
-                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full whitespace-nowrap">Application Usage</button>
-                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full whitespace-nowrap">General Information</button>
+                <!-- FAQ Filter Buttons -->
+                <!-- Desktop/Tablet View -->
+                <div class="hidden md:flex flex-wrap justify-center gap-3 mb-12">
+                    <button class="bg-[#14B8A6] text-white px-6 py-2 rounded-full">Membership management</button>
+                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full border border-gray-200">Points & Rewards</button>
+                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full border border-gray-200">Transaction Validation</button>
+                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full border border-gray-200">Application Usage</button>
+                    <button class="bg-white text-gray-700 px-6 py-2 rounded-full border border-gray-200">General Information</button>
+                </div>
+
+                <!-- Mobile View -->
+                <div class="grid grid-cols-2 gap-3 mb-8 md:hidden">
+                    <!-- First row -->
+                    <button class="bg-[#14B8A6] text-white px-4 py-2 rounded-full text-sm">Membership management</button>
+                    <button class="bg-white text-gray-700 px-4 py-2 rounded-full text-center border border-gray-200 text-sm">Points & Rewards</button>
+                    
+                    <!-- Second row -->
+                    <button class="bg-white text-gray-700 px-4 py-2 rounded-full text-center border border-gray-200 text-sm">Transaction Validation</button>
+                    <button class="bg-white text-gray-700 px-4 py-2 rounded-full text-center border border-gray-200 text-sm">Application Usage</button>
+                    
+                    <button class="bg-white text-gray-700 px-4 py-2 rounded-full text-center border border-gray-200 text-sm ml-[25%]">General Information</button>
+
                 </div>
 
                 <!-- FAQ Grid - Adjust spacing -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                     <!-- FAQ Item 1 -->
                     <div class="p-4 md:p-6">
-                        <button class="flex justify-between items-center w-full text-left">
+                        <button onclick="toggleFAQ(this)" class="flex justify-between items-center w-full text-left">
                             <h3 class="text-lg font-semibold">How do I deactivate my membership?</h3>
-                            <svg class="w-6 h-6 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-6 h-6 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="mt-4">
+                        <div class="mt-4 hidden">
                             <p class="text-gray-600">Members who wish to stop participating in the AYC Program can deactivate their membership at the Customer Service Counter on the Ground floor. Accumulated points and raffle coupons will be forfeited and cannot be transferred.</p>
                         </div>
                     </div>
 
                     <!-- FAQ Item 2 -->
                     <div class="p-4 md:p-6">
-                        <button class="flex justify-between items-center w-full text-left">
+                        <button onclick="toggleFAQ(this)" class="flex justify-between items-center w-full text-left">
                             <h3 class="text-lg font-semibold">How do I join the AYC Program as a member?</h3>
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="mt-4">
+                        <div class="mt-4 hidden">
                             <p class="text-gray-600">New members must be at least 17 years old and upload an identification card (KTP/KITAS/Passport) and fill out personal data accurately and completely on the application.</p>
                         </div>
                     </div>
 
                     <!-- FAQ Item 3 -->
                     <div class="p-4 md:p-6">
-                        <button class="flex justify-between items-center w-full text-left">
+                        <button onclick="toggleFAQ(this)" class="flex justify-between items-center w-full text-left">
                             <h3 class="text-lg font-semibold">How do I download the application if I am already an AYC Program member</h3>
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="mt-4">
+                        <div class="mt-4 hidden">
                             <p class="text-gray-600">For existing AYC members, enter your AYC member number and create a new password by following the steps in the application.</p>
                         </div>
                     </div>
 
                     <!-- FAQ Item 4 -->
                     <div class="p-4 md:p-6">
-                        <button class="flex justify-between items-center w-full text-left">
+                        <button onclick="toggleFAQ(this)" class="flex justify-between items-center w-full text-left">
                             <h3 class="text-lg font-semibold">Are there different membership levels?</h3>
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="mt-4">
+                        <div class="mt-4 hidden">
                             <p class="text-gray-600">There are two types of AYC membership levels: Regular Member and VIP Member.</p>
                         </div>
                     </div>
 
                     <!-- FAQ Item 5 -->
                     <div class="p-4 md:p-6">
-                        <button class="flex justify-between items-center w-full text-left">
+                        <button onclick="toggleFAQ(this)" class="flex justify-between items-center w-full text-left">
                             <h3 class="text-lg font-semibold">What are the benefits for AYC VIP Members?</h3>
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="mt-4">
+                        <div class="mt-4 hidden">
                             <p class="text-gray-600">AYC VIP Members are entitled to the following benefits:</p>
                             <ul class="list-disc pl-5 mt-2 text-gray-600">
                                 <li>Free Premium Parking located in the P11 parking area.</li>
@@ -273,13 +288,13 @@
 
                     <!-- FAQ Item 6 -->
                     <div class="p-4 md:p-6">
-                        <button class="flex justify-between items-center w-full text-left">
+                        <button onclick="toggleFAQ(this)" class="flex justify-between items-center w-full text-left">
                             <h3 class="text-lg font-semibold">How can Regular AYC Members upgrade to VIP Members?</h3>
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <div class="mt-4">
+                        <div class="mt-4 hidden">
                             <p class="text-gray-600">Regular AYC Members can upgrade to VIP Membership by spending a minimum of Rp. 50,000,000 (fifty million rupiah) within one year.</p>
                             <p class="text-gray-600 mt-2">VIP AYC Members can maintain their VIP status by spending a minimum of Rp. 50,000,000 (fifty million rupiah) within one year from the date the membership was upgraded in the system. If not, the membership level will be downgraded to Regular Member.</p>
                         </div>

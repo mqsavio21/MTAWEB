@@ -93,4 +93,25 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation();
         });
     });
-}); 
+});
+
+function toggleAccordion(contentId) {
+    const content = document.getElementById(contentId);
+    const icon = document.getElementById(contentId.replace('content', 'icon'));
+    
+    // Toggle only the clicked accordion item
+    content.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+}
+
+function toggleFAQ(button) {
+    // Get the content div (next sibling after the button)
+    const content = button.nextElementSibling;
+    // Get the SVG icon (last child of the button)
+    const icon = button.querySelector('svg');
+    
+    // Toggle the content visibility
+    content.classList.toggle('hidden');
+    // Toggle the icon rotation
+    icon.classList.toggle('rotate-180');
+} 
