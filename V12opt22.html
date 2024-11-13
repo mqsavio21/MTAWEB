@@ -74,9 +74,10 @@
         </div>
     </header>
 
-    <main>
+    <main class="overflow-x-hidden">
         
-        <section class="relative px-4 py-8">
+        <!-- Explore Taman Anggrek Section - Desktop/Tablet Only -->  
+        <section class="relative px-4 py-16 hidden md:block">
             <div class="grid grid-cols-2 items-start mb-4">
                 <!-- Headline Text - Left column -->
                 <div>
@@ -137,13 +138,177 @@
             </div>
         </section>
 
+        <!-- Explore Taman Anggrek Section - Android only -->  
+        <section class="relative px-4 py-16 block md:hidden">
+            <div class="grid grid-cols-1 items-start mb-4">
+                <!-- Headline Text -->
+                <div class="mb-6">
+                    <h1 class="text-3xl font-semibold text-[#9333EA] mb-1">Explore Taman Anggrek</h1>
+                    <h2 class="text-2xl font-semibold text-[#0EA5E9]">and Get the best deal</h2>
+                </div>
+
+                <!-- Slider Navigation - Centered -->
+                <div class="flex justify-left">
+                    <div class="flex items-center gap-3">
+                        <button class="w-8 h-8 rounded-full bg-[#9333EA] flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                            </svg>
+                        </button>
+                        
+                        <div class="flex gap-1.5">
+                            <div class="w-2 h-2 rounded-full bg-[#9333EA]"></div>
+                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+                            <div class="w-2 h-2 rounded-full bg-gray-200"></div>
+                        </div>
+                        
+                        <button class="w-8 h-8 rounded-full bg-[#9333EA] flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Card and White Background Container -->
+            <div class="relative">
+                <!-- White background -->
+                <div class="bg-white pb-16">
+                    <!-- Content Card -->
+                    <div class="relative rounded-3xl overflow-hidden">
+                        <img src="public/images/ikea.webp" alt="IKEA Store Interior" class="w-full h-[600px] object-cover">
+                    </div>
+                </div>
+                
+                <!-- Content Overlay - Adjusted for mobile -->
+                <div class="absolute left-4 right-4 -bottom-12">
+                    <div class="bg-white p-6 rounded-3xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-2">Directory</h3>
+                        <p class="text-gray-600 text-sm mb-4">A vibrant and alluring paradise in the heart of West Jakarta, brimming with endless shopping, dining, recreational and entertainment opportunities.</p>
+                        <a href="#" class="inline-flex items-center bg-[#9333EA] text-white px-4 py-2 rounded-full text-sm hover:bg-[#9333EA]/90">
+                            See More
+                            <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vendor Cards Container - Vertical Layout for Mobile -->
+                <div class="mt-32 px-4 space-y-4"> 
+                    <!-- Frank & Co Card -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                        <div class="flex flex-col">
+                            <!-- Store Image - Increased height from h-48 to h-64 -->
+                            <img src="public/images/ig3.webp" alt="Frank & Co Store" class="w-full h-64 object-cover">
+                            <!-- Content Container - Added more padding -->
+                            <div class="p-6">
+                                <!-- Location and Benefits Row -->
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="flex items-center text-gray-600 text-xs">
+                                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        </svg>
+                                        Lv UG #E33
+                                    </div>
+                                    <div class="flex items-center text-[#EC4899] text-xs">
+                                        <img src="public/images/logomta.webp" alt="AYC Logo" class="w-3 h-3 mr-1">
+                                        AYC Benefits Accepted
+                                    </div>
+                                </div>
+                                <!-- Store Name - Increased margin -->
+                                <h2 class="text-lg font-bold mb-4">Frank & Co Jewelry</h2>
+                                <!-- Discover Button -->
+                                <div class="flex">
+                                    <a href="#" class="inline-flex items-center text-[#0EA5E9] text-xs">
+                                        Discover Tenant
+                                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adidas Card -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                        <div class="flex flex-col">
+                            <!-- Increased height from h-48 to h-64 -->
+                            <img src="public/images/storeadidas.webp" alt="Adidas Store" class="w-full h-64 object-cover">
+                            <!-- Added more padding -->
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="flex items-center text-gray-600 text-xs">
+                                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        </svg>
+                                        Lv UG #E33
+                                    </div>
+                                    <div class="flex items-center text-[#EC4899] text-xs">
+                                        <img src="public/images/logomta.webp" alt="AYC Logo" class="w-3 h-3 mr-1">
+                                        AYC Benefits Accepted
+                                    </div>
+                                </div>
+                                <!-- Increased margin -->
+                                <h2 class="text-lg font-bold mb-4">Adidas</h2>
+                                <div class="flex">
+                                    <a href="#" class="inline-flex items-center text-[#0EA5E9] text-xs">
+                                        Discover Tenant
+                                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Electronic City Card -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                        <div class="flex flex-col">
+                            <!-- Increased height from h-48 to h-64 -->
+                            <img src="public/images/ecity.webp" alt="Electronic City" class="w-full h-64 object-cover">
+                            <!-- Added more padding -->
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="flex items-center text-gray-600 text-xs">
+                                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        </svg>
+                                        Lv UG #E33
+                                    </div>
+                                    <div class="flex items-center text-[#EC4899] text-xs">
+                                        <img src="public/images/logomta.webp" alt="AYC Logo" class="w-3 h-3 mr-1">
+                                        AYC Benefits Accepted
+                                    </div>
+                                </div>
+                                <!-- Increased margin -->
+                                <h2 class="text-lg font-bold mb-4">Electronic City</h2>
+                                <div class="flex">
+                                    <a href="#" class="inline-flex items-center text-[#0EA5E9] text-xs">
+                                        Discover Tenant
+                                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- What's On Section -->
-        <section class="py-16 px-4">
+        <section class="px-4 py-16">
             <!-- Header with See All link -->
             <div class="flex justify-between items-center mb-8">
                 <div>
-                    <h2 class="text-3xl text-gray-400 font-medium">See What's On</h2>
-                    <h3 class="text-3xl text-gray-700 font-medium">Mall Taman Anggrek</h3>
+                    <h2 class="text-2xl md:text-3xl text-gray-400 font-medium">See What's On</h2>
+                    <h3 class="text-2xl md:text-3xl text-gray-700 font-medium">Mall Taman Anggrek</h3>
                 </div>
                 <a href="/whats-on" class="flex items-center text-gray-700 hover:text-gray-900">
                     See All
@@ -159,14 +324,14 @@
                 <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
                     <img src="public/images/whatsonv12.webp" alt="Immigration Lounge" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    <div class="absolute inset-0 flex flex-col justify-between p-8">
+                    <div class="absolute inset-0 flex flex-col justify-between p-6 md:p-8">
                         <div class="flex justify-between items-start text-white">
-                            <h4 class="text-2xl font-medium">Immigration</h4>
-                            <p class="text-xl font-medium">September 3, 2024</p>
+                            <h4 class="text-lg md:text-2xl font-medium">Immigration</h4>
+                            <p class="text-base md:text-xl font-medium">September 3, 2024</p>
                         </div>
                         <div class="text-white">
-                            <h3 class="text-4xl font-bold mb-6">Opening Soon: The Immigration Lounge at Mal Taman Anggrek!</h3>
-                            <a href="#" class="inline-flex items-center text-white">
+                            <h3 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6">Opening Soon: The Immigration Lounge at Mal Taman Anggrek!</h3>
+                            <a href="#" class="inline-flex items-center text-white text-sm md:text-base">
                                 See more →
                             </a>
                         </div>
@@ -174,18 +339,18 @@
                 </div>
 
                 <!-- Right Side - Grid of 4 --> 
-                <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-2 gap-4 md:gap-6">
                     <!-- Ranch Market Card -->
                     <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
                         <img src="public/images/newsgridimg.webp" alt="Ranch Market" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute inset-0 flex flex-col justify-between p-6">
+                        <div class="absolute inset-0 flex flex-col justify-between p-4 md:p-6">
                             <div class="flex justify-between items-start text-white">
-                                <h4 class="text-sm font-medium">Ranch Market</h4>
-                                <p class="text-sm font-medium">April 13, 2024</p>
+                                <h4 class="text-xs md:text-sm font-medium">Ranch Market</h4>
+                                <p class="text-xs md:text-sm font-medium">April 13, 2024</p>
                             </div>
                             <div class="text-white">
-                                <h3 class="text-lg font-medium">Eid is coming! Stock your fridges with good goods.</h3>
+                                <h3 class="text-sm md:text-lg font-medium">Eid is coming! Stock your fridges with good goods.</h3>
                             </div>
                         </div>
                     </div>
@@ -194,13 +359,13 @@
                     <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
                         <img src="public/images/newsgridimg.webp" alt="Mothercare" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute inset-0 flex flex-col justify-between p-6">
+                        <div class="absolute inset-0 flex flex-col justify-between p-4 md:p-6">
                             <div class="flex justify-between items-start text-white">
-                                <h4 class="text-sm font-medium">Mothercare</h4>
-                                <p class="text-sm font-medium">April 13, 2024</p>
+                                <h4 class="text-xs md:text-sm font-medium">Mothercare</h4>
+                                <p class="text-xs md:text-sm font-medium">April 13, 2024</p>
                             </div>
                             <div class="text-white">
-                                <h3 class="text-lg font-medium">Love your loved ones! Save up to 50%.</h3>
+                                <h3 class="text-sm md:text-lg font-medium">Love your loved ones! Save up to 50%.</h3>
                             </div>
                         </div>
                     </div>
@@ -209,23 +374,23 @@
                     <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
                         <img src="public/images/newsgridimg.webp" alt="Erafone" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div class="absolute inset-0 flex flex-col justify-between p-6">
+                        <div class="absolute inset-0 flex flex-col justify-between p-4 md:p-6">
                             <div class="flex justify-between items-start text-white">
-                                <h4 class="text-sm font-medium">Erafone</h4>
-                                <p class="text-sm font-medium">April 13, 2024</p>
+                                <h4 class="text-xs md:text-sm font-medium">Erafone</h4>
+                                <p class="text-xs md:text-sm font-medium">April 13, 2024</p>
                             </div>
                             <div class="text-white">
-                                <h3 class="text-lg font-medium">Best deal for OPPO Reno 11 at Erafone</h3>
+                                <h3 class="text-sm md:text-lg font-medium">Best deal for OPPO Reno 11 at Erafone</h3>
                             </div>
                         </div>
                     </div>
 
                     <!-- Newsletter Card -->
                     <div class="relative rounded-3xl overflow-hidden aspect-[4/3] bg-gradient-to-r from-violet-500 to-cyan-500">
-                        <div class="absolute inset-0 p-6 flex flex-col gap-4">
-                            <h4 class="text-white font-medium">Newsletter</h4>
-                            <h3 class="text-xl text-white font-medium mt-4">Don't miss our latest offers & promotions</h3>
-                            <button class="bg-[#1AAAAB] text-lg text-white px-4 py-2 rounded-full w-fit hover:bg-[#1AAAAB] transition-colors">
+                        <div class="absolute inset-0 p-4 md:p-6 flex flex-col gap-2 md:gap-4">
+                            <h4 class="text-white font-medium text-xs md:text-base">Newsletter</h4>
+                            <h3 class="text-sm md:text-xl text-white font-medium mt-2 md:mt-4">Don't miss our latest offers & promotions</h3>
+                            <button class="bg-[#1AAAAB] text-sm md:text-lg text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full w-fit hover:bg-[#1AAAAB] transition-colors">
                                 Subscribe
                             </button>
                         </div>
@@ -233,6 +398,237 @@
                 </div>
             </div>
         </section>
+        
+        <!-- directory section - Hidden on mobile, visible on md breakpoint and up -->
+        <section class="relative px-4 py-32 hidden md:block">
+            <!-- Content Container -->
+            <div class="relative">
+                <!-- Background Image Container - Adjusted height to match headline -->
+                <div class="w-full h-[500px] rounded-3xl overflow-hidden">
+                    <img 
+                        src="public/images/flowerdirectory.webp" 
+                        alt="flower directory" 
+                        class="w-full h-full object-cover"
+                    >
+                </div>
+                
+                <!-- Content Card - Position maintained -->
+                <div class="absolute top-[40%] left-12 translate-y-1/2 z-10">
+                    <div class="bg-gradient-to-r from-purple-500 to-cyan-500 backdrop-blur-sm p-8 rounded-3xl max-w-lg">
+                        <h2 class="text-2xl text-white font-medium mb-2">Directory</h2>
+                        <p class="text-white text-lg mb-6">
+                            A vibrant and alluring paradise in the heart of West Jakarta, brimming with endless shopping, dining, recreational and entertainment opportunities.
+                        </p>
+                        <a href="#" class="inline-flex items-center bg-teal-500 text-white px-6 py-3 rounded-full hover:bg-gray-100 transition-colors">
+                            See more →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vendor Cards Container -->
+                <div class="flex gap-6 absolute top-3/4 -right-32 transform -translate-y-1/2 z-10">
+                    <!-- Frank & Co Card -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg w-[300px]">
+                        <img src="public/images/ig3.webp" alt="Frank & Co Store" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold mb-2">Frank & Co Jewelry</h2>
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="flex items-center text-gray-600 text-sm">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Lv UG #E33
+                                </div>
+                                <div class="flex items-center text-pink-500 text-sm">
+                                    <img src="public/images/logomta.webp" alt="AYC Logo" class="w-4 h-4 mr-1">
+                                    AYC Benefits Accepted
+                                </div>
+                            </div>
+                            <a href="#" class="inline-flex items-center text-teal-500 border border-teal-500 px-4 py-2 rounded-full hover:bg-teal-50 transition-colors text-sm">
+                                Discover Tenant →
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Adidas Card -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg w-[300px]">
+                        <img src="public/images/storeadidas.webp" alt="Adidas Store" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold mb-2">Adidas</h2>
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="flex items-center text-gray-600 text-sm">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Lv UG #E33
+                                </div>
+                                <div class="flex items-center text-pink-500 text-sm">
+                                    <img src="public/images/logomta.webp" alt="AYC Logo" class="w-4 h-4 mr-1">
+                                    AYC Benefits Accepted
+                                </div>
+                            </div>
+                            <a href="#" class="inline-flex items-center text-teal-500 border border-teal-500 px-4 py-2 rounded-full hover:bg-teal-50 transition-colors text-sm">
+                                Discover Tenant →
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Electronic City Card -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg w-[300px]">
+                        <img src="public/images/ecity.webp" alt="ecity" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h2 class="text-xl font-bold mb-2">Electronic City</h2>
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="flex items-center text-gray-600 text-sm">
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Lv UG #E33
+                                </div>
+                                <div class="flex items-center text-pink-500 text-sm">
+                                    <img src="public/images/logomta.webp" alt="AYC Logo" class="w-4 h-4 mr-1">
+                                    AYC Benefits Accepted
+                                </div>
+                            </div>
+                            <a href="#" class="inline-flex items-center text-teal-500 border border-teal-500 px-4 py-2 rounded-full hover:bg-teal-50 transition-colors text-sm">
+                                Discover Tenant →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- directory section - Mobile only -->
+        <section class="relative px-4 py-16 block md:hidden">
+            <!-- Content Card and White Background Container -->
+            <div class="relative">
+                <!-- White background -->
+                <div class="bg-white pb-16">
+                    <!-- Content Card -->
+                    <div class="relative rounded-3xl overflow-hidden">
+                        <img src="public/images/flowerdirectory.webp" alt="flower directory" class="w-full h-[600px] object-cover">
+                    </div>
+                </div>
+                
+                <!-- Content Overlay - Adjusted for mobile -->
+                <div class="absolute left-4 right-4 -bottom-12">
+                    <div class="bg-gradient-to-r from-pink-500/50 to-purple-500/50 backdrop-blur-sm p-8 rounded-3xl max-w-lg">
+                        <h3 class="text-xl text-white font-bold mb-2">Directory</h3>
+                        <p class="text-white text-sm mb-4">A vibrant and alluring paradise in the heart of West Jakarta, brimming with endless shopping, dining, recreational and entertainment opportunities.</p>
+                        <a href="#" class="inline-flex items-center bg-[#9333EA] text-white px-4 py-2 rounded-full text-sm hover:bg-[#9333EA]/90">
+                            See More
+                            <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vendor Cards Container - Vertical Layout for Mobile -->
+            <div class="mt-32 px-4 space-y-4"> 
+                <!-- Frank & Co Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="flex flex-col">
+                        <!-- Store Image - Increased height from h-48 to h-64 -->
+                        <img src="public/images/ig3.webp" alt="Frank & Co Store" class="w-full h-64 object-cover">
+                        <!-- Content Container - Added more padding -->
+                        <div class="p-6">
+                            <!-- Location and Benefits Row -->
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="flex items-center text-gray-600 text-xs">
+                                    <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Lv UG #E33
+                                </div>
+                                <div class="flex items-center text-[#EC4899] text-xs">
+                                    <img src="public/images/logomta.webp" alt="AYC Logo" class="w-3 h-3 mr-1">
+                                    AYC Benefits Accepted
+                                </div>
+                            </div>
+                            <!-- Store Name - Increased margin -->
+                            <h2 class="text-lg font-bold mb-4">Frank & Co Jewelry</h2>
+                            <!-- Discover Button -->
+                            <div class="flex">
+                                <a href="#" class="inline-flex items-center text-[#0EA5E9] text-xs">
+                                    Discover Tenant
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adidas Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="flex flex-col">
+                        <!-- Increased height from h-48 to h-64 -->
+                        <img src="public/images/storeadidas.webp" alt="Adidas Store" class="w-full h-64 object-cover">
+                        <!-- Added more padding -->
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="flex items-center text-gray-600 text-xs">
+                                    <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Lv UG #E33
+                                </div>
+                                <div class="flex items-center text-[#EC4899] text-xs">
+                                    <img src="public/images/logomta.webp" alt="AYC Logo" class="w-3 h-3 mr-1">
+                                    AYC Benefits Accepted
+                                </div>
+                            </div>
+                            <!-- Increased margin -->
+                            <h2 class="text-lg font-bold mb-4">Adidas</h2>
+                            <div class="flex">
+                                <a href="#" class="inline-flex items-center text-[#0EA5E9] text-xs">
+                                    Discover Tenant
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electronic City Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
+                    <div class="flex flex-col">
+                        <!-- Increased height from h-48 to h-64 -->
+                        <img src="public/images/ecity.webp" alt="Electronic City" class="w-full h-64 object-cover">
+                        <!-- Added more padding -->
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <div class="flex items-center text-gray-600 text-xs">
+                                    <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                    Lv UG #E33
+                                </div>
+                                <div class="flex items-center text-[#EC4899] text-xs">
+                                    <img src="public/images/logomta.webp" alt="AYC Logo" class="w-3 h-3 mr-1">
+                                    AYC Benefits Accepted
+                                </div>
+                            </div>
+                            <!-- Increased margin -->
+                            <h2 class="text-lg font-bold mb-4">Electronic City</h2>
+                            <div class="flex">
+                                <a href="#" class="inline-flex items-center text-[#0EA5E9] text-xs">
+                                    Discover Tenant
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         
         <!-- About Us MTA Section -->
         <section class="py-16" style="background-color: rgba(115, 78, 234, 0.05)">
@@ -323,41 +719,41 @@
 
 
         <!-- Loyalty Program Section -->
-        <section class="py-16">
-            <div class="max-w-[90rem] mx-auto px-4 md:px-8">
+        <section class="px-4 py-16">
+            <div class="max-w-[120rem] mx-auto">
                 <!-- Container with split background -->
                 <div class="grid md:grid-cols-2 rounded-3xl overflow-hidden">
-                    <!-- Left Content with gradient - Added min-h-[500px] -->
-                    <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 md:p-12 min-h-[500px]">
-                        <div class="space-y-6">
+                    <!-- Left Content with gradient -->
+                    <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-6 md:p-8 min-h-[400px]">
+                        <div class="space-y-8">
                             <div class="space-y-4">
-                                <h2 class="text-4xl md:text-5xl font-semibold">
-                                    <span class="text-pink-400">Shop, Earn Points,</span><br>
-                                    <span class="text-indigo-500">Get Instant Rewards</span>
+                                <h2 class="text-4xl md:text-5xl font-semibold space-y-2">
+                                    <span class="text-[#EC4899] block mb-2">Shop, Earn Points,</span>
+                                    <span class="text-[#6366F1] block">Get Instant Rewards</span>
                                 </h2>
-                                <p class="text-gray-600 text-lg">
+                                <p class="text-gray-600 text-xl md:text-2xl">
                                     Join to earn points for every rupiah all year, every time 
                                     you shop and redeem to get your rewards at Mall 
                                     Taman Anggrek
                                 </p>
                             </div>
                             
-                            <div class="flex flex-wrap gap-4">
-                                <a href="#" class="inline-flex items-center px-6 py-3 bg-indigo-500 text-white rounded-full hover:bg-indigo-600 transition-colors">
+                            <div class="flex flex-wrap gap-6 justify-center w-full">
+                                <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-[#6366F1] text-white rounded-full hover:bg-[#6366F1]/90 transition-colors w-48">
                                     Open AYC App
                                     <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                                     </svg>
                                 </a>
-                                <a href="#" class="inline-flex items-center px-6 py-3 text-indigo-500 border border-indigo-500 rounded-full hover:bg-indigo-50 transition-colors">
+                                <a href="#" class="inline-flex items-center justify-center px-6 py-3 text-[#6366F1] border border-[#6366F1] rounded-full hover:bg-[#6366F1]/5 transition-colors w-48">
                                     Read FAQ
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right Content - Full background image - Matched height -->
-                    <div class="relative h-full min-h-[500px]">
+                    <!-- Right Content - Full background image -->
+                    <div class="relative h-full min-h-[400px]">
                         <img 
                             src="public/images/bgloyaltyprogram.webp" 
                             alt="Loyalty Program Background" 
@@ -366,7 +762,7 @@
                         <!-- Dark overlay -->
                         <div class="absolute inset-0 bg-black/20"></div>
                         
-                        <!-- AYC Card Overlay - Adjusted positioning and size -->
+                        <!-- AYC Card Overlay -->
                         <div class="absolute inset-0 flex items-center justify-center">
                             <img 
                                 src="public/images/v12ayc.webp" 
@@ -380,7 +776,7 @@
         </section>
 
         <!-- Important Updates Section -->
-        <section class="mt-16 py-16 bg-[#F0FDFA]">
+        <section class="py-16 bg-[#F0FDFA]">
             <div class="max-w-7xl mx-auto px-4">
                 <!-- Header with "See All" link -->
                 <div class="flex justify-between items-center mb-8">
@@ -453,7 +849,7 @@
         </section>
 
         <!-- Social Media Section -->
-        <section class="py-16">
+        <section class="px-4 py-16">
             <div class="text-center mb-12">
                 <h2 class="text-4xl text-gray-500 font-medium mb-2">Get in touch with us</h2>
                 <h3 class="text-4xl text-gray-700 font-medium">through social media</h3>
@@ -462,16 +858,16 @@
             <!-- Instagram Profile Link -->
             <div class="flex justify-center mb-12">
                 <a href="https://instagram.com/maltamananggrek" 
-                   class="group relative flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#A020F0]">
+                   class="group relative flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#A020F0] hover:bg-[#A020F0] transition-all duration-300">
                     <!-- Instagram icon -->
-                    <span class="w-5 h-5 text-[#A020F0]">
+                    <span class="w-5 h-5 text-[#A020F0] group-hover:text-white transition-colors duration-300">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </span>
                     
                     <!-- Text -->
-                    <span class="text-[#A020F0] font-medium">
+                    <span class="text-[#A020F0] group-hover:text-white transition-colors duration-300">
                         Maltamananggrek
                     </span>
                 </a>
