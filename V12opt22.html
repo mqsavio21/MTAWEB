@@ -630,8 +630,8 @@
         </section>
 
         
-        <!-- About Us MTA Section -->
-        <section class="py-16" style="background-color: rgba(115, 78, 234, 0.05)">
+        <!-- About Us MTA Section - Hidden on mobile, visible on md breakpoint and up -->
+        <section class="py-16 hidden md:block" style="background-color: rgba(115, 78, 234, 0.05)">
             <div class="px-4">
                 <!-- About Us Header -->
                 <div class="mb-12 px-3">
@@ -683,8 +683,39 @@
                     </div>
                 </div>
             </div>
-            <!-- Insightful Facts - Position Adjustments -->
-            <div class="flex justify-end mt-8 mr-24">
+            <!-- Insightful Facts - Mobile View -->
+            <div class="block md:hidden mt-32 px-4">
+                <h3 class="text-left font-medium mb-8 text-lg">Insightful Facts</h3>
+                <div class="grid grid-cols-2 gap-8">
+                    <!-- Fact 1 -->
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-400 mb-2">01</p>
+                        <p class="text-4xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">18 Million</p>
+                        <p class="text-sm text-gray-600">Annual Customer Traffic</p>
+                    </div>
+                    <!-- Fact 2 -->
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-400 mb-2">02</p>
+                        <p class="text-4xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">4000</p>
+                        <p class="text-sm text-gray-600">Parking spaces</p>
+                    </div>
+                    <!-- Fact 3 -->
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-400 mb-2">03</p>
+                        <p class="text-4xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">700</p>
+                        <p class="text-sm text-gray-600">Retail units</p>
+                    </div>
+                    <!-- Fact 4 -->
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-400 mb-2">04</p>
+                        <p class="text-4xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">7</p>
+                        <p class="text-sm text-gray-600">Retail floors</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insightful Facts - Desktop View -->
+            <div class="hidden md:flex justify-end mt-8 mr-24">
                 <div class="p-6 rounded-3xl">
                     <h3 class="text-left font-medium mb-8 text-lg">Insightful Facts</h3>
                     <div class="flex gap-24">
@@ -717,43 +748,157 @@
             </div>
         </section>
 
+        <!-- About Us MTA Section - mobile view -->
+        <section class="py-16 block md:hidden" style="background-color: rgba(115, 78, 234, 0.05)">
+            <div class="px-4">
+                <!-- About Us Header -->
+                <div class="mb-12 px-3">
+                    <p class="text-sm text-gray-500 mb-2 font-semibold">About Us</p>
+                    <h2 class="text-3xl md:text-4xl mb-2 font-semibold">
+                        <span class="text-pink-400 font-semibold">Setting up the new standard</span>
+                    </h2>
+                    <h3 class="text-3xl md:text-4xl text-indigo-500 font-semibold">
+                        of Shopping mall in Indonesia
+                    </h3>
+                </div>
+
+                <!-- Image Grid with Overlapping Description -->
+                <div class="flex flex-col md:flex-row gap-4 relative">
+                    <!-- Left Image (Portrait) -->
+                    <div class="md:w-[35%] rounded-3xl overflow-hidden h-[500px]">
+                        <img 
+                            src="public/images/v12mtapot.webp" 
+                            alt="Mall Taman Anggrek Portrait View" 
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+
+                    <!-- Right Image (Landscape) -->
+                    <div class="md:w-[65%] rounded-3xl overflow-hidden h-[500px]">
+                        <img 
+                            src="public/images/v12mtalands.webp" 
+                            alt="Mall Taman Anggrek Landscape View" 
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+
+                    <!-- Content Overlay - Adjusted for mobile -->
+                    <div class="absolute left-4 right-4 -bottom-20">
+                        <div class="bg-gradient-to-r from-purple-600/90 to-purple-500/90 backdrop-blur-sm p-8 rounded-3xl max-w-lg">
+                            <h3 class="text-xl text-white font-bold mb-2">Mall Taman Anggrek</h3>
+                            <p class="text-white text-sm mb-4">A vibrant and alluring paradise in the heart of West Jakarta, brimming with endless shopping, dining, recreational and entertainment opportunities.</p>
+                            <a href="#" class="inline-flex items-center bg-white text-[#9333EA] px-4 py-2 rounded-full text-sm hover:bg-[#9333EA]/90">
+                                    Read More
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Insightful Facts - Mobile View -->
+            <div class="block md:hidden mt-32 px-4">
+                <h3 class="text-left font-medium mb-8 text-lg">Insightful Facts</h3>
+                <div class="grid grid-cols-2 gap-8">
+                    <!-- Fact 1 -->
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-400 mb-2">01</p>
+                        <p class="text-4xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">18 Million</p>
+                        <p class="text-sm text-gray-600">Annual Customer Traffic</p>
+                    </div>
+                    <!-- Fact 2 -->
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-400 mb-2">02</p>
+                        <p class="text-4xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">4000</p>
+                        <p class="text-sm text-gray-600">Parking spaces</p>
+                    </div>
+                    <!-- Fact 3 -->
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-400 mb-2">03</p>
+                        <p class="text-4xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">700</p>
+                        <p class="text-sm text-gray-600">Retail units</p>
+                    </div>
+                    <!-- Fact 4 -->
+                    <div class="flex flex-col">
+                        <p class="text-xs text-gray-400 mb-2">04</p>
+                        <p class="text-4xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">7</p>
+                        <p class="text-sm text-gray-600">Retail floors</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insightful Facts - Desktop View -->
+            <div class="hidden md:flex justify-end mt-8 mr-24">
+                <div class="p-6 rounded-3xl">
+                    <h3 class="text-left font-medium mb-8 text-lg">Insightful Facts</h3>
+                    <div class="flex gap-24">
+                        <!-- Fact 1 -->
+                        <div class="flex flex-col">
+                            <p class="text-xs text-gray-400 mb-2">01</p>
+                            <p class="text-5xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">18 Million</p>
+                            <p class="text-gray-600">Annual Customer Traffic</p>
+                        </div>
+                        <!-- Fact 2 -->
+                        <div class="flex flex-col">
+                            <p class="text-xs text-gray-400 mb-2">02</p>
+                            <p class="text-5xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">4000</p>
+                            <p class="text-gray-600">Parking spaces</p>
+                        </div>
+                        <!-- Fact 3 -->
+                        <div class="flex flex-col">
+                            <p class="text-xs text-gray-400 mb-2">03</p>
+                            <p class="text-5xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">700</p>
+                            <p class="text-gray-600">Retail units</p>
+                        </div>
+                        <!-- Fact 4 -->
+                        <div class="flex flex-col">
+                            <p class="text-xs text-gray-400 mb-2">04</p>
+                            <p class="text-5xl font-medium text-[#8B5CF6] mb-2 font-['Satoshi-Variable']">7</p>
+                            <p class="text-gray-600">Retail floors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Loyalty Program Section -->
         <section class="px-4 py-16">
             <div class="max-w-[120rem] mx-auto">
                 <!-- Container with split background -->
                 <div class="grid md:grid-cols-2 rounded-3xl overflow-hidden">
-                    <!-- Left Content with gradient -->
-                    <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-6 md:p-8 min-h-[400px]">
+                    <!-- Left Content (Right on mobile) with gradient -->
+                    <div class="bg-gradient-to-br from-violet-500 to-fuchsia-500 md:from-purple-50 md:to-blue-50 p-6 md:p-8 min-h-[400px] order-2 md:order-1">
                         <div class="space-y-8">
                             <div class="space-y-4">
                                 <h2 class="text-4xl md:text-5xl font-semibold space-y-2">
-                                    <span class="text-[#EC4899] block mb-2">Shop, Earn Points,</span>
-                                    <span class="text-[#6366F1] block">Get Instant Rewards</span>
+                                    <span class="text-white md:text-[#EC4899] block mb-2">Shop, Earn Points,</span>
+                                    <span class="text-white md:text-[#6366F1] block">Get Instant Rewards</span>
                                 </h2>
-                                <p class="text-gray-600 text-xl md:text-2xl">
+                                <p class="text-white/90 md:text-gray-600 text-xl md:text-2xl">
                                     Join to earn points for every rupiah all year, every time 
                                     you shop and redeem to get your rewards at Mall 
                                     Taman Anggrek
                                 </p>
                             </div>
                             
-                            <div class="flex flex-wrap gap-6 justify-center w-full">
-                                <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-[#6366F1] text-white rounded-full hover:bg-[#6366F1]/90 transition-colors w-48">
+                            <!-- Modified button container -->
+                            <div class="flex flex-row gap-4 justify-center md:justify-center w-full">
+                                <a href="#" class="inline-flex items-center justify-center px-4 md:px-6 py-3 bg-white md:bg-[#6366F1] text-violet-500 md:text-white rounded-full hover:bg-white/90 md:hover:bg-[#6366F1]/90 transition-colors w-[45%] md:w-48 text-sm md:text-base">
                                     Open AYC App
                                     <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                                     </svg>
                                 </a>
-                                <a href="#" class="inline-flex items-center justify-center px-6 py-3 text-[#6366F1] border border-[#6366F1] rounded-full hover:bg-[#6366F1]/5 transition-colors w-48">
+                                <a href="#" class="inline-flex items-center justify-center px-4 md:px-6 py-3 text-white md:text-[#6366F1] border border-white md:border-[#6366F1] rounded-full hover:bg-white/10 md:hover:bg-[#6366F1]/5 transition-colors w-[45%] md:w-48 text-sm md:text-base">
                                     Read FAQ
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right Content - Full background image -->
-                    <div class="relative h-full min-h-[400px]">
+                    <!-- Right Content (Left on mobile) - Full background image -->
+                    <div class="relative h-full min-h-[400px] order-1 md:order-2">
                         <img 
                             src="public/images/bgloyaltyprogram.webp" 
                             alt="Loyalty Program Background" 
@@ -776,7 +921,7 @@
         </section>
 
         <!-- Important Updates Section -->
-        <section class="py-16 bg-[#F0FDFA]">
+        <section class="hidden md:block py-16 bg-[#F0FDFA]">
             <div class="max-w-7xl mx-auto px-4">
                 <!-- Header with "See All" link -->
                 <div class="flex justify-between items-center mb-8">
@@ -849,7 +994,7 @@
         </section>
 
         <!-- Social Media Section -->
-        <section class="px-4 py-16">
+        <section class="hidden md:block px-4 py-16">
             <div class="text-center mb-12">
                 <h2 class="text-4xl text-gray-500 font-medium mb-2">Get in touch with us</h2>
                 <h3 class="text-4xl text-gray-700 font-medium">through social media</h3>
