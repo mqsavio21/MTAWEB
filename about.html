@@ -198,243 +198,133 @@
             </div>
         </section>
 
-        <!-- Facilities Grid Section -->
-        <section class="responsive-section hidden md:block">
+        <!-- Facilities Section -->
+        <section class="responsive-section">
             <div class="w-full px-4 md:px-8 lg:px-16">
-                <h2 class="text-3xl font-semibold mb-8 font-['Comic Sans MS'] text-center">Facilities</h2>
+                <h2 class="text-3xl font-semibold mb-8 text-center text-[#26B7B0]">Facilities</h2>
                 
                 <!-- Grid Container -->
-                <div class="grid grid-cols-5 gap-2 md:gap-3">
+                <div class="grid grid-cols-5 gap-8">
                     <!-- Row 1 -->
-                    <!-- Each facility wrapped in relative container -->
-                    <div class="relative">
-                        <!-- Praying Room (existing) -->
-                        <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="praying-room">
-                            <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M12 2l3 3h3v3h-3l-3 3-3-3H9V5h3l3-3zM5 10v10h14V10H5zm2 2h10v6H7v-6z" stroke-width="2" stroke-linecap="round"/>
                             </svg>
-                            <p class="font-semibold">Praying Room</p>
                         </div>
-                        <!-- Details panel -->
-                        <div id="praying-room-details" class="facility-details absolute left-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                            <img src="public/images/praying-room.webp" alt="Praying Room" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="text-xl font-bold text-gray-900">Praying Room</h3>
-                                <p class="text-gray-600">Available at:</p>
-                                <ul class="list-disc pl-5 text-gray-600">
-                                    <li>L1 #B19A</li>
-                                    <li>L2 #B22A</li>
-                                    <li>L3 #B16A</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <p class="text-gray-600">Praying Room</p>
                     </div>
 
-                    <div class="relative">
-                        <!-- Concierge (existing) -->
-                        <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="concierge">
-                            <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" stroke-width="2"/>
-                            </svg>
-                            <p class="font-semibold">Concierge</p>
-                        </div>
-                        <!-- Details panel -->
-                        <div id="concierge-details" class="facility-details absolute left-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                            <img src="public/images/concierge.webp" alt="Concierge" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="text-xl font-bold text-gray-900">Concierge</h3>
-                                <p class="text-gray-600">Our concierge services include:</p>
-                                <ul class="list-disc pl-5 text-gray-600">
-                                    <li>Information & Directions</li>
-                                    <li>Mall Guide Services</li>
-                                    <li>Wheelchair Assistance</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="relative">
-                        <!-- Taxi Lounge -->
-                        <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="taxi-lounge">
-                            <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M7 17h10M5 17a2 2 0 100-4H3m2 4a2 2 0 110-4m14 4a2 2 0 100-4h2m-2 4a2 2 0 110-4M17 9V7a2 2 0 00-2-2H9a2 2 0 00-2 2v2m10 0H7m10 0a2 2 0 012 2v2M7 9a2 2 0 00-2 2v2" stroke-width="2"/>
-                            </svg>
-                            <p class="font-semibold">Taxi Lounge</p>
-                        </div>
-                        <div id="taxi-lounge-details" class="facility-details absolute left-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                            <img src="public/images/taxi-lounge.webp" alt="Taxi Lounge" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="text-xl font-bold text-gray-900">Taxi Lounge</h3>
-                                <p class="text-gray-600">Available at:</p>
-                                <ul class="list-disc pl-5 text-gray-600">
-                                    <li>Main Entrance (Ground Floor)</li>
-                                    <li>West Entrance (L1)</li>
-                                    <li>24/7 Service Available</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="relative">
-                        <!-- Lost and Found -->
-                        <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="lost-found">
-                            <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-width="2"/>
                                 <path d="M15 11h2m-2 0h-2m2 0v2m0-2V9" stroke-width="2"/>
                             </svg>
-                            <p class="font-semibold">Lost & Found</p>
                         </div>
-                        <div id="lost-found-details" class="facility-details absolute left-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                            <img src="public/images/lost-found.webp" alt="Lost and Found" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="text-xl font-bold text-gray-900">Lost & Found</h3>
-                                <p class="text-gray-600">Lost and Found service is available at:</p>
-                                <ul class="list-disc pl-5 text-gray-600">
-                                    <li>Information Center (Ground Floor)</li>
-                                    <li>Security Office (B1 Floor)</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <p class="text-gray-600">Lost & Found</p>
                     </div>
-                    
-                    <div class="relative">
-                        <!-- Stroller -->
-                        <div class="relative">
-                            <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="stroller">
-                                <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                    <path d="M18 20v-3M6 20v-3M12 8V4m0 4L9 4m3 4l3-4M4 12h16M4 12l2 5h12l2-5M4 12V8h16v4" stroke-width="2"/>
-                                </svg>
-                                <p class="font-semibold">Stroller & Wheel Chair</p>
-                            </div>
-                            <!-- Modified positioning for details panel -->
-                            <div id="stroller-details" class="facility-details absolute right-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                                <img src="public/images/stroller.webp" alt="Stroller & Wheelchair" class="w-full h-48 object-cover">
-                                <div class="p-4">
-                                    <h3 class="text-xl font-bold text-gray-900">Stroller & Wheelchair</h3>
-                                    <p class="text-gray-600">Available for rent at:</p>
-                                    <ul class="list-disc pl-5 text-gray-600">
-                                        <li>Information Desk (Ground Floor)</li>
-                                        <li>Concierge Desk (L1)</li>
-                                    </ul>
-                                </div>
-                            </div>
+
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" stroke-width="2"/>
+                            </svg>
                         </div>
+                        <p class="text-gray-600">Concierge</p>
                     </div>
-                    
+
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M18 20v-3M6 20v-3M12 8V4m0 4L9 4m3 4l3-4M4 12h16M4 12l2 5h12l2-5M4 12V8h16v4" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Stroller & Wheel chair</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M7 17h10M5 17a2 2 0 100-4H3m2 4a2 2 0 110-4m14 4a2 2 0 100-4h2m-2 4a2 2 0 110-4M17 9V7a2 2 0 00-2-2H9a2 2 0 00-2 2v2m10 0H7m10 0a2 2 0 012 2v2M7 9a2 2 0 00-2 2v2" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Taxi Lounge</p>
+                    </div>
+
                     <!-- Row 2 -->
-                    <div class="relative">
-                        <!-- Car Valet -->
-                        <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="car-valet">
-                            <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" stroke-width="2"/>
                                 <path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10" stroke-width="2"/>
                                 <path d="M1 8h12M8 4v4" stroke-width="2"/>
                             </svg>
-                            <p class="font-semibold">Car Valet Parking</p>
                         </div>
-                        <div id="car-valet-details" class="facility-details absolute left-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                            <img src="public/images/car-valet.webp" alt="Car Valet" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="text-xl font-bold text-gray-900">Car Valet Parking</h3>
-                                <p class="text-gray-600">Service hours and locations:</p>
-                                <ul class="list-disc pl-5 text-gray-600">
-                                    <li>Main Entrance: 10AM - 10PM</li>
-                                    <li>West Entrance: 10AM - 10PM</li>
-                                    <li>Rate: 50,000 IDR/entry</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <p class="text-gray-600">Valet Parking</p>
                     </div>
-                    
-                    <div class="relative">
-                        <!-- Bicycle Parking -->
-                        <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="bicycle-parking">
-                            <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M12 12l-3-3m3 3l3-3m-3 3v8m0-8h6M7.5 19a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm9 0a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke-width="2"/>
-                            </svg>
-                            <p class="font-semibold">Bicycle Parking Spot</p>
-                        </div>
-                        <div id="bicycle-parking-details" class="facility-details absolute left-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                            <img src="public/images/bicycle-parking.webp" alt="Bicycle Parking" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="text-xl font-bold text-gray-900">Bicycle Parking</h3>
-                                <p class="text-gray-600">Secure bicycle parking available at:</p>
-                                <ul class="list-disc pl-5 text-gray-600">
-                                    <li>B1 Floor Parking Area</li>
-                                    <li>Ground Floor West Entrance</li>
-                                    <li>24/7 Security Monitored</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="relative">
-                        <!-- First Aid -->
-                        <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="first-aid">
-                            <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M12 4v16m8-8H4" stroke-width="2"/>
                             </svg>
-                            <p class="font-semibold">First Aid Room</p>
                         </div>
-                        <div id="first-aid-details" class="facility-details absolute left-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                            <img src="public/images/first-aid.webp" alt="First Aid" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="text-xl font-bold text-gray-900">First Aid Room</h3>
-                                <p class="text-gray-600">Medical assistance available at:</p>
-                                <ul class="list-disc pl-5 text-gray-600">
-                                    <li>Ground Floor (#A12)</li>
-                                    <li>L2 Floor (#B15)</li>
-                                    <li>Trained medical staff on duty</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <p class="text-gray-600">First Aid Room</p>
                     </div>
-                    
-                    <div class="relative">
-                        <!-- Baby Changing -->
-                        <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="baby-changing">
-                            <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M12 3v1m0 16v1m-9-9h1m16 0h1M4.6 4.6l.7.7m12.1-.7l-.7.7m-9.9 9.9l.7.7m12.1-.7l-.7.7M12 12l3-3m-3 3l-3-3m3 3v4" stroke-width="2"/>
                             </svg>
-                            <p class="font-semibold">Baby Changing Room</p>
                         </div>
-                        <div id="baby-changing-details" class="facility-details absolute left-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                            <img src="public/images/baby-changing.webp" alt="Baby Changing Room" class="w-full h-48 object-cover">
-                            <div class="p-4">
-                                <h3 class="text-xl font-bold text-gray-900">Baby Changing Room</h3>
-                                <p class="text-gray-600">Available at these locations:</p>
-                                <ul class="list-disc pl-5 text-gray-600">
-                                    <li>Ground Floor (#A08)</li>
-                                    <li>L1 Floor (#B12)</li>
-                                    <li>L2 Floor (#C15)</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <p class="text-gray-600">Baby Changing Room</p>
                     </div>
-                    
-                    <div class="relative">
-                        <!-- Attendant -->
-                        <div class="relative">
-                            <div class="bg-[#26B7B0] p-6 text-white text-center w-full cursor-pointer facility-item" data-facility="attendant">
-                                <svg class="w-12 h-12 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke-width="2"/>
-                                    <circle cx="9" cy="7" r="4" stroke-width="2"/>
-                                </svg>
-                                <p class="font-semibold">Attendant</p>
-                            </div>
-                            <!-- Modified positioning for details panel -->
-                            <div id="attendant-details" class="facility-details absolute right-full top-0 hidden w-[300px] bg-white shadow-lg rounded-lg overflow-hidden z-10">
-                                <img src="public/images/attendant.webp" alt="Attendant" class="w-full h-48 object-cover">
-                                <div class="p-4">
-                                    <h3 class="text-xl font-bold text-gray-900">Attendant Services</h3>
-                                    <p class="text-gray-600">Our attendants can help with:</p>
-                                    <ul class="list-disc pl-5 text-gray-600">
-                                        <li>Shopping Assistance</li>
-                                        <li>Directions & Information</li>
-                                        <li>Special Needs Support</li>
-                                    </ul>
-                                </div>
-                            </div>
+
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke-width="2"/>
+                                <circle cx="9" cy="7" r="4" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Attendant</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="border-2 border-[#26B7B0] rounded-lg p-6 mb-4">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-[#26B7B0]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" stroke-width="2"/>
+                                <path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10" stroke-width="2"/>
+                                <path d="M1 8h12M8 4v4" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Valet Parking</p>
+                    </div>
+                </div>
+
+                <!-- Praying Room Details Container -->
+                <div class="mt-16 bg-[#26B7B0] rounded-2xl overflow-hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Image Column -->
+                        <div class="p-8">
+                            <img 
+                                src="public/images/praying-room.webp" 
+                                alt="Mall Taman Anggrek Praying Room" 
+                                class="w-full h-[300px] object-cover rounded-xl"
+                            >
+                        </div>
+                        
+                        <!-- Content Column -->
+                        <div class="p-8 flex flex-col justify-center">
+                            <h3 class="text-white text-3xl font-semibold mb-6">Praying Room</h3>
+                            <p class="text-white mb-4">Praying room will be available at the following locations:</p>
+                            <ul class="text-white space-y-2">
+                                <li>• L1 #B19A</li>
+                                <li>• L2 #B22A</li>
+                                <li>• L3 #B16A</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
